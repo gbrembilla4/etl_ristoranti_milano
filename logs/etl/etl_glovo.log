@@ -1,0 +1,894 @@
+2025-08-05 16:08:43,512 - INFO - Inizio processo ETL Glovo
+2025-08-05 16:08:43,569 - INFO - Caricati 1131 ristoranti dal file: /Users/gloria.brembilla/Documents/AIDA/Modulo1/02 - BI/etl_ristoranti_milano/scripts/etl/../../data/raw/ristoranti_glovo_milano.json
+2025-08-05 16:08:43,569 - INFO - Inizio processo di pulizia dati
+2025-08-05 16:08:43,573 - WARNING - Ristorante 'La Creperia' scartato: solo 0 piatti validi
+2025-08-05 16:08:43,574 - WARNING - Ristorante 'Al noor ristorante grill pizzeria' scartato: indirizzo non Milano
+2025-08-05 16:08:43,577 - WARNING - Ristorante 'Burger King' scartato: solo 0 piatti validi
+2025-08-05 16:08:43,577 - WARNING - Ristorante 'Billy Tacos y Burritos' scartato: indirizzo non Milano
+2025-08-05 16:08:43,578 - WARNING - Prezzo anomalo per piatto 'POSATE': €0.4
+2025-08-05 16:08:43,578 - WARNING - Ristorante 'McDonald's' scartato: solo 0 piatti validi
+2025-08-05 16:08:43,581 - WARNING - Ristorante 'Gelateria La Romana' scartato: solo 0 piatti validi
+2025-08-05 16:08:43,583 - WARNING - Prezzo anomalo per piatto 'Ketchup': €0.2
+2025-08-05 16:08:43,592 - WARNING - Prezzo anomalo per piatto 'Tignanello': €180.0
+2025-08-05 16:08:43,605 - WARNING - Prezzo anomalo per piatto 'EXTRA - KIT BACCHET EXTRA': €0.2
+2025-08-05 16:08:43,614 - WARNING - Ristorante 'Burger King' scartato: solo 0 piatti validi
+2025-08-05 16:08:43,621 - WARNING - Ristorante 'Ben e Jerry's Official Store' scartato: solo 0 piatti validi
+2025-08-05 16:08:43,621 - WARNING - Ristorante 'Poke Kcal' scartato: solo 0 piatti validi
+2025-08-05 16:08:43,636 - WARNING - Ristorante 'Unica' scartato: solo 1 piatti validi
+2025-08-05 16:08:43,637 - WARNING - Ristorante 'Le clavier' scartato: solo 1 piatti validi
+2025-08-05 16:08:43,668 - WARNING - Prezzo anomalo per piatto 'Salsa di Soia grande': €0.35
+2025-08-05 16:08:43,668 - WARNING - Prezzo anomalo per piatto 'Salsa Teriyaki': €0.3
+2025-08-05 16:08:43,669 - WARNING - Prezzo anomalo per piatto 'Salsa di Soia piccola': €0.2
+2025-08-05 16:08:43,669 - WARNING - Prezzo anomalo per piatto 'Salsa Agrodolce': €0.2
+2025-08-05 16:08:43,669 - WARNING - Prezzo anomalo per piatto 'Salsa Agropiccante': €0.2
+2025-08-05 16:08:43,669 - WARNING - Ristorante 'Burger King' scartato: solo 0 piatti validi
+2025-08-05 16:08:43,678 - WARNING - Prezzo anomalo per piatto 'Posate': €0.3
+2025-08-05 16:08:43,678 - WARNING - Ristorante 'PokeeGo' scartato: solo 0 piatti validi
+2025-08-05 16:08:43,692 - WARNING - Ristorante 'La Pergola 2' scartato: solo 0 piatti validi
+2025-08-05 16:08:43,696 - WARNING - Ristorante 'Il Trancio d'oro' scartato: solo 0 piatti validi
+2025-08-05 16:08:43,704 - WARNING - Prezzo anomalo per piatto 'Maionese': €0.2
+2025-08-05 16:08:43,704 - WARNING - Prezzo anomalo per piatto 'Bustina di ketchup': €0.2
+2025-08-05 16:08:43,705 - WARNING - Prezzo anomalo per piatto 'Salsa piccante Hot Devil': €0.45
+2025-08-05 16:08:43,707 - WARNING - Prezzo anomalo per piatto 'Ketchup': €0.45
+2025-08-05 16:08:43,707 - WARNING - Prezzo anomalo per piatto 'Maionese': €0.45
+2025-08-05 16:08:43,707 - WARNING - Prezzo anomalo per piatto 'Barbecue': €0.45
+2025-08-05 16:08:43,707 - WARNING - Prezzo anomalo per piatto 'Agrodolce': €0.45
+2025-08-05 16:08:43,707 - WARNING - Prezzo anomalo per piatto 'Senape': €0.45
+2025-08-05 16:08:43,708 - WARNING - Ristorante 'McDonald's' scartato: solo 0 piatti validi
+2025-08-05 16:08:43,721 - WARNING - Ristorante 'Annarè - Milano' scartato: solo 0 piatti validi
+2025-08-05 16:08:43,725 - WARNING - Prezzo anomalo per piatto 'Ketchup': €0.4
+2025-08-05 16:08:43,725 - WARNING - Prezzo anomalo per piatto 'Maionese': €0.4
+2025-08-05 16:08:43,738 - WARNING - Prezzo anomalo per piatto 'Salsa Teriyaki': €0.34
+2025-08-05 16:08:43,738 - WARNING - Prezzo anomalo per piatto 'Salsa Agrodolce leggermente piccante': €0.34
+2025-08-05 16:08:43,738 - WARNING - Prezzo anomalo per piatto 'Salsa Piccante': €0.34
+2025-08-05 16:08:43,738 - WARNING - Prezzo anomalo per piatto 'Wasabi': €0.34
+2025-08-05 16:08:43,738 - WARNING - Prezzo anomalo per piatto 'Zenzero': €0.34
+2025-08-05 16:08:43,749 - WARNING - Prezzo anomalo per piatto 'Zenzero': €0.24
+2025-08-05 16:08:43,749 - WARNING - Prezzo anomalo per piatto 'Wasabi': €0.24
+2025-08-05 16:08:43,749 - WARNING - Prezzo anomalo per piatto 'Salsa di Soia': €0.24
+2025-08-05 16:08:43,749 - WARNING - Prezzo anomalo per piatto 'Salsa Teriyaki': €0.24
+2025-08-05 16:08:43,749 - WARNING - Prezzo anomalo per piatto 'Salsa Agrodolce': €0.24
+2025-08-05 16:08:43,749 - WARNING - Prezzo anomalo per piatto 'Salsa Piccante': €0.16
+2025-08-05 16:08:43,749 - WARNING - Ristorante 'Ben e Jerry's Official Store' scartato: solo 0 piatti validi
+2025-08-05 16:08:43,757 - WARNING - Prezzo anomalo per piatto 'Salsa di Soia': €0.24
+2025-08-05 16:08:43,757 - WARNING - Prezzo anomalo per piatto 'Zenzero': €0.24
+2025-08-05 16:08:43,757 - WARNING - Prezzo anomalo per piatto 'Wasabi': €0.24
+2025-08-05 16:08:43,757 - WARNING - Prezzo anomalo per piatto 'Salsa Agrodolce': €0.24
+2025-08-05 16:08:43,757 - WARNING - Prezzo anomalo per piatto 'Salsa Piccante': €0.24
+2025-08-05 16:08:43,757 - WARNING - Prezzo anomalo per piatto 'Salsa Teriyaki': €0.24
+2025-08-05 16:08:43,758 - WARNING - Prezzo anomalo per piatto 'Cono croccante fatto in casa': €0.4
+2025-08-05 16:08:43,758 - WARNING - Prezzo anomalo per piatto 'Cono croccante fatto in casa': €0.4
+2025-08-05 16:08:43,758 - WARNING - Prezzo anomalo per piatto 'Coppetta e palettina': €0.2
+2025-08-05 16:08:43,762 - INFO - Processati 100/1131 ristoranti
+2025-08-05 16:08:43,782 - WARNING - Ristorante 'Sweet Dreams' scartato: solo 0 piatti validi
+2025-08-05 16:08:43,788 - WARNING - Ristorante 'Dolce America' scartato: solo 0 piatti validi
+2025-08-05 16:08:43,789 - WARNING - Ristorante 'Cik' scartato: solo 0 piatti validi
+2025-08-05 16:08:43,794 - WARNING - Prezzo anomalo per piatto 'Bacchette': €0.1
+2025-08-05 16:08:43,794 - WARNING - Prezzo anomalo per piatto 'Forchetta': €0.1
+2025-08-05 16:08:43,801 - WARNING - Prezzo anomalo per piatto 'Coni x1': €0.4
+2025-08-05 16:08:43,802 - WARNING - Ristorante 'Glory POP' scartato: solo 0 piatti validi
+2025-08-05 16:08:43,819 - WARNING - Ristorante 'GNOMOGELATO' scartato: solo 0 piatti validi
+2025-08-05 16:08:43,822 - WARNING - Prezzo anomalo per piatto 'Salsa di soia': €0.3
+2025-08-05 16:08:43,822 - WARNING - Prezzo anomalo per piatto 'Salsa piccante': €0.3
+2025-08-05 16:08:43,822 - WARNING - Prezzo anomalo per piatto 'salsa agrodolce': €0.3
+2025-08-05 16:08:43,822 - WARNING - Prezzo anomalo per piatto 'Salsa agrodolce piccante': €0.3
+2025-08-05 16:08:43,832 - WARNING - Prezzo anomalo per piatto 'Salsa di Soia': €0.24
+2025-08-05 16:08:43,832 - WARNING - Prezzo anomalo per piatto 'Zenzero': €0.24
+2025-08-05 16:08:43,832 - WARNING - Prezzo anomalo per piatto 'Wasabi': €0.24
+2025-08-05 16:08:43,832 - WARNING - Prezzo anomalo per piatto 'Salsa Agrodolce': €0.24
+2025-08-05 16:08:43,832 - WARNING - Prezzo anomalo per piatto 'Salsa Piccante': €0.24
+2025-08-05 16:08:43,832 - WARNING - Prezzo anomalo per piatto 'Salsa Teriyaki': €0.24
+2025-08-05 16:08:43,839 - WARNING - Ristorante 'Emi poke e sushi' scartato: solo 0 piatti validi
+2025-08-05 16:08:43,848 - WARNING - Prezzo anomalo per piatto 'Coppetta gelato': €0.3
+2025-08-05 16:08:43,848 - WARNING - Prezzo anomalo per piatto 'Cono a cialda': €0.3
+2025-08-05 16:08:43,849 - WARNING - Prezzo anomalo per piatto 'Coppetta gelato': €0.3
+2025-08-05 16:08:43,849 - WARNING - Prezzo anomalo per piatto 'Cono a cialda': €0.3
+2025-08-05 16:08:43,855 - WARNING - Prezzo anomalo per piatto '100.SALSA DI SOIA': €0.3
+2025-08-05 16:08:43,855 - WARNING - Prezzo anomalo per piatto '102.SALSA CHILI': €0.3
+2025-08-05 16:08:43,855 - WARNING - Prezzo anomalo per piatto '104.SALSA AGRODOLCE': €0.3
+2025-08-05 16:08:43,858 - WARNING - Ristorante 'Guzzo-Burger Ignoranti' scartato: solo 0 piatti validi
+2025-08-05 16:08:43,861 - WARNING - Prezzo anomalo per piatto 'cono Joy': €0.4
+2025-08-05 16:08:43,861 - WARNING - Prezzo anomalo per piatto 'coppetta': €0.3
+2025-08-05 16:08:43,863 - WARNING - Prezzo anomalo per piatto 'Cono vuoto': €0.3
+2025-08-05 16:08:43,863 - WARNING - Prezzo anomalo per piatto 'Coppetta vuota': €0.2
+2025-08-05 16:08:43,880 - WARNING - Prezzo anomalo per piatto 'Salsa di soia 30ml': €0.3
+2025-08-05 16:08:43,880 - WARNING - Prezzo anomalo per piatto 'Salsa agro piccante 30 ml': €0.3
+2025-08-05 16:08:43,880 - WARNING - Prezzo anomalo per piatto 'Salsa teriyaki 30 ml': €0.3
+2025-08-05 16:08:43,880 - WARNING - Prezzo anomalo per piatto 'Salsa maionese piccante 30 ml': €0.3
+2025-08-05 16:08:43,883 - WARNING - Prezzo anomalo per piatto 'Salsa di soia extra': €0.3
+2025-08-05 16:08:43,883 - WARNING - Prezzo anomalo per piatto 'Salsa agrodolce extra': €0.3
+2025-08-05 16:08:43,883 - WARNING - Prezzo anomalo per piatto 'Salsa piccante extra': €0.3
+2025-08-05 16:08:43,883 - WARNING - Prezzo anomalo per piatto 'Bacchette': €0.2
+2025-08-05 16:08:43,883 - WARNING - Prezzo anomalo per piatto 'Forchetta / cucchiaio': €0.2
+2025-08-05 16:08:43,892 - WARNING - Prezzo anomalo per piatto 'Ruinart blanc de blanc': €170.0
+2025-08-05 16:08:43,904 - WARNING - Prezzo anomalo per piatto 'Tignanello Antinori': €180.0
+2025-08-05 16:08:43,906 - WARNING - Prezzo anomalo per piatto 'Premium box': €206.0
+2025-08-05 16:08:43,936 - WARNING - Prezzo anomalo per piatto 'Maionese monoporzione': €0.2
+2025-08-05 16:08:43,940 - INFO - Processati 200/1131 ristoranti
+2025-08-05 16:08:43,944 - WARNING - Prezzo anomalo per piatto 'Un agnello intero': €500.0
+2025-08-05 16:08:43,944 - WARNING - Prezzo anomalo per piatto 'Mezzo agnello': €300.0
+2025-08-05 16:08:43,944 - WARNING - Prezzo anomalo per piatto 'Un quarto di agnello': €180.0
+2025-08-05 16:08:43,947 - WARNING - Ristorante 'Istanbul kebab' scartato: solo 0 piatti validi
+2025-08-05 16:08:43,959 - WARNING - Prezzo anomalo per piatto 'Ketchup': €0.2
+2025-08-05 16:08:43,959 - WARNING - Prezzo anomalo per piatto 'Maionese': €0.2
+2025-08-05 16:08:43,963 - WARNING - Prezzo anomalo per piatto 'Louis Roederer Cristal Brut 2015': €420.0
+2025-08-05 16:08:43,964 - WARNING - Prezzo anomalo per piatto 'Dom Perignon Vintage 2012': €410.0
+2025-08-05 16:08:43,964 - WARNING - Prezzo anomalo per piatto 'Ruinart Blanc de Blancs Brut NV': €210.0
+2025-08-05 16:08:43,964 - WARNING - Prezzo anomalo per piatto 'Ruinart R de ruinart Brut NV': €155.0
+2025-08-05 16:08:43,964 - WARNING - Prezzo anomalo per piatto 'Tenuta san giudo Sassicaia 2020': €520.0
+2025-08-05 16:08:43,964 - WARNING - Prezzo anomalo per piatto 'Gaja Barbaresco 2019': €490.0
+2025-08-05 16:08:43,972 - WARNING - Ristorante 'Gelateria le Colonne' scartato: solo 0 piatti validi
+2025-08-05 16:08:43,991 - WARNING - Prezzo anomalo per piatto 'Salsa di soia': €0.3
+2025-08-05 16:08:43,991 - WARNING - Prezzo anomalo per piatto 'Salsa di piccante': €0.3
+2025-08-05 16:08:43,991 - WARNING - Prezzo anomalo per piatto 'Salsa di agrodolce': €0.3
+2025-08-05 16:08:44,001 - WARNING - Prezzo anomalo per piatto 'Forchetta Extra': €0.2
+2025-08-05 16:08:44,001 - WARNING - Prezzo anomalo per piatto 'Bacchetta Extra': €0.2
+2025-08-05 16:08:44,002 - WARNING - Ristorante 'Alice Pizza' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,012 - WARNING - Prezzo anomalo per piatto 'Bustina di ketchup': €0.3
+2025-08-05 16:08:44,012 - WARNING - Prezzo anomalo per piatto 'Bustina di maionese': €0.3
+2025-08-05 16:08:44,017 - WARNING - Prezzo anomalo per piatto 'POSATE': €0.2
+2025-08-05 16:08:44,019 - WARNING - Ristorante 'Cornetto Pazzo' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,045 - WARNING - Prezzo anomalo per piatto 'Ketchup - bustina': €0.3
+2025-08-05 16:08:44,052 - WARNING - Prezzo anomalo per piatto 'Cono medio biscotto': €0.25
+2025-08-05 16:08:44,052 - WARNING - Prezzo anomalo per piatto 'Cono Wafer': €0.15
+2025-08-05 16:08:44,062 - WARNING - Prezzo anomalo per piatto 'Salsa di Soia': €0.24
+2025-08-05 16:08:44,062 - WARNING - Prezzo anomalo per piatto 'Zenzero': €0.24
+2025-08-05 16:08:44,062 - WARNING - Prezzo anomalo per piatto 'Wasabi': €0.24
+2025-08-05 16:08:44,062 - WARNING - Prezzo anomalo per piatto 'Salsa Agrodolce': €0.24
+2025-08-05 16:08:44,062 - WARNING - Prezzo anomalo per piatto 'Salsa Piccante': €0.24
+2025-08-05 16:08:44,062 - WARNING - Prezzo anomalo per piatto 'Salsa Teriyaki': €0.24
+2025-08-05 16:08:44,069 - WARNING - Prezzo anomalo per piatto 'Cono arrotolato vuoto': €0.3
+2025-08-05 16:08:44,069 - WARNING - Prezzo anomalo per piatto 'Coppetta monouso in carta': €0.3
+2025-08-05 16:08:44,083 - WARNING - Ristorante 'Officine del Gelato' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,093 - WARNING - Ristorante 'Gelateria La Romana' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,094 - WARNING - Prezzo anomalo per piatto 'Ketchup': €0.2
+2025-08-05 16:08:44,097 - INFO - Processati 300/1131 ristoranti
+2025-08-05 16:08:44,101 - WARNING - Prezzo anomalo per piatto 'Ketchup': €0.3
+2025-08-05 16:08:44,101 - WARNING - Prezzo anomalo per piatto 'Maionese': €0.3
+2025-08-05 16:08:44,101 - WARNING - Prezzo anomalo per piatto 'Salsa 1000 island': €0.3
+2025-08-05 16:08:44,101 - WARNING - Prezzo anomalo per piatto 'Salsa Ranch': €0.3
+2025-08-05 16:08:44,101 - WARNING - Prezzo anomalo per piatto 'Honey Mustard': €0.3
+2025-08-05 16:08:44,101 - WARNING - Prezzo anomalo per piatto 'Salsa Barbecue': €0.3
+2025-08-05 16:08:44,124 - WARNING - Prezzo anomalo per piatto 'Salsa Teriyaki': €0.34
+2025-08-05 16:08:44,124 - WARNING - Prezzo anomalo per piatto 'Salsa Agrodolce leggermente piccante': €0.34
+2025-08-05 16:08:44,124 - WARNING - Prezzo anomalo per piatto 'Salsa Piccante': €0.34
+2025-08-05 16:08:44,124 - WARNING - Prezzo anomalo per piatto 'Wasabi': €0.34
+2025-08-05 16:08:44,124 - WARNING - Prezzo anomalo per piatto 'Zenzero': €0.34
+2025-08-05 16:08:44,135 - WARNING - Ristorante 'Spùn Tiramisù' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,142 - WARNING - Prezzo anomalo per piatto 'Bacchetta': €0.2
+2025-08-05 16:08:44,144 - WARNING - Ristorante 'Yuan Loreto' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,148 - WARNING - Ristorante 'Égalité' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,150 - WARNING - Ristorante 'Pasticceria Gelsomina' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,173 - WARNING - Ristorante 'Pasticceria Tipiace' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,180 - WARNING - Ristorante 'PokeeGo' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,186 - WARNING - Ristorante 'Mamma Tteokbokki' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,192 - WARNING - Prezzo anomalo per piatto 'Ketcup': €0.4
+2025-08-05 16:08:44,192 - WARNING - Prezzo anomalo per piatto 'Maionese': €0.4
+2025-08-05 16:08:44,192 - WARNING - Prezzo anomalo per piatto 'Salsa barbecue': €0.4
+2025-08-05 16:08:44,194 - WARNING - Prezzo anomalo per piatto 'Condimenti e Posate (Olio, Sale, Aceto)': €0.4
+2025-08-05 16:08:44,194 - WARNING - Prezzo anomalo per piatto 'Salsa Maionese': €0.3
+2025-08-05 16:08:44,194 - WARNING - Prezzo anomalo per piatto 'Salsa Barbecue': €0.3
+2025-08-05 16:08:44,194 - WARNING - Prezzo anomalo per piatto 'Salsa Ketchup': €0.3
+2025-08-05 16:08:44,201 - WARNING - Prezzo anomalo per piatto 'Forchetta Extra': €0.2
+2025-08-05 16:08:44,201 - WARNING - Prezzo anomalo per piatto 'Bacchetta Extra': €0.2
+2025-08-05 16:08:44,202 - WARNING - Ristorante 'Alice Pizza' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,207 - WARNING - Prezzo anomalo per piatto 'Bacchette': €0.1
+2025-08-05 16:08:44,207 - WARNING - Prezzo anomalo per piatto 'Forchetta': €0.1
+2025-08-05 16:08:44,211 - WARNING - Prezzo anomalo per piatto 'Coppetta e cucchiaino': €0.15
+2025-08-05 16:08:44,212 - WARNING - Ristorante 'Aroma Napoletano' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,221 - WARNING - Prezzo anomalo per piatto 'Bicchiere': €0.4
+2025-08-05 16:08:44,223 - WARNING - Prezzo anomalo per piatto 'Cono cialda - 1 pezzo': €0.3
+2025-08-05 16:08:44,224 - WARNING - Prezzo anomalo per piatto 'Salsa Teriyaki': €0.4
+2025-08-05 16:08:44,224 - WARNING - Prezzo anomalo per piatto 'Salsa di Soia': €0.4
+2025-08-05 16:08:44,224 - WARNING - Prezzo anomalo per piatto 'Salsa Piccante': €0.4
+2025-08-05 16:08:44,224 - WARNING - Prezzo anomalo per piatto 'Wasabi': €0.4
+2025-08-05 16:08:44,246 - WARNING - Prezzo anomalo per piatto 'Posate': €0.2
+2025-08-05 16:08:44,246 - WARNING - Ristorante 'Bubble Tea' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,248 - WARNING - Prezzo anomalo per piatto 'Cofanetto 108 macarons': €245.0
+2025-08-05 16:08:44,248 - WARNING - Prezzo anomalo per piatto 'Cofanetto 72 macarons': €156.0
+2025-08-05 16:08:44,253 - INFO - Processati 400/1131 ristoranti
+2025-08-05 16:08:44,255 - WARNING - Ristorante 'Panificio Lisandri' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,255 - WARNING - Ristorante 'Mascherpa tiramisù + coffee' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,266 - WARNING - Prezzo anomalo per piatto 'Cialde': €0.4
+2025-08-05 16:08:44,266 - WARNING - Prezzo anomalo per piatto 'Coppetta': €0.4
+2025-08-05 16:08:44,266 - WARNING - Prezzo anomalo per piatto 'Piccole Palette': €0.4
+2025-08-05 16:08:44,266 - WARNING - Prezzo anomalo per piatto 'Cono': €0.4
+2025-08-05 16:08:44,267 - WARNING - Ristorante 'AltaRe' La Puglia a Morsi' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,270 - WARNING - Ristorante 'Pasticceria Tharù' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,270 - WARNING - Prezzo anomalo per piatto 'Bacchetta': €0.2
+2025-08-05 16:08:44,272 - WARNING - Prezzo anomalo per piatto 'Biscotto della fortuna 1pz-255': €0.27
+2025-08-05 16:08:44,272 - WARNING - Prezzo anomalo per piatto 'Salsa agrodolce-254': €0.27
+2025-08-05 16:08:44,272 - WARNING - Prezzo anomalo per piatto 'Salsa agropiccante-251': €0.27
+2025-08-05 16:08:44,272 - WARNING - Prezzo anomalo per piatto 'Salsa di soia-252': €0.27
+2025-08-05 16:08:44,272 - WARNING - Prezzo anomalo per piatto 'Salsa piccante-253': €0.27
+2025-08-05 16:08:44,282 - WARNING - Ristorante 'Pasticceria Mourad' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,309 - WARNING - Prezzo anomalo per piatto 'soia': €0.3
+2025-08-05 16:08:44,309 - WARNING - Prezzo anomalo per piatto 'wasabi': €0.3
+2025-08-05 16:08:44,309 - WARNING - Prezzo anomalo per piatto 'zenzero': €0.3
+2025-08-05 16:08:44,309 - WARNING - Ristorante 'Venchi Gelato e Cioccolato' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,330 - WARNING - Ristorante 'Gelateria Umberto 1934' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,340 - WARNING - Ristorante 'Bar Tabacchi' scartato: solo 1 piatti validi
+2025-08-05 16:08:44,341 - WARNING - Ristorante 'Mister piada' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,342 - WARNING - Ristorante 'Verogusto' scartato: solo 1 piatti validi
+2025-08-05 16:08:44,345 - WARNING - Ristorante 'Godo' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,345 - WARNING - Ristorante 'Panfé' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,349 - WARNING - Prezzo anomalo per piatto 'Ketchup': €0.3
+2025-08-05 16:08:44,349 - WARNING - Prezzo anomalo per piatto 'Maionese': €0.3
+2025-08-05 16:08:44,357 - WARNING - Prezzo anomalo per piatto 'Salsa di soia': €0.2
+2025-08-05 16:08:44,357 - WARNING - Prezzo anomalo per piatto 'Aceto': €0.2
+2025-08-05 16:08:44,357 - WARNING - Prezzo anomalo per piatto 'Salsa piccante': €0.2
+2025-08-05 16:08:44,357 - WARNING - Prezzo anomalo per piatto 'Salsa agro piccante': €0.2
+2025-08-05 16:08:44,369 - WARNING - Ristorante 'He Wei Ristorante' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,381 - WARNING - Prezzo anomalo per piatto 'Olio piccante': €0.3
+2025-08-05 16:08:44,381 - WARNING - Prezzo anomalo per piatto 'Salsa agrodolce': €0.3
+2025-08-05 16:08:44,381 - WARNING - Prezzo anomalo per piatto 'Salsa di soia': €0.3
+2025-08-05 16:08:44,384 - INFO - Processati 500/1131 ristoranti
+2025-08-05 16:08:44,391 - WARNING - Ristorante '1212 Bubble Tea' scartato: solo 1 piatti validi
+2025-08-05 16:08:44,393 - WARNING - Ristorante 'Susù - Tiramisù' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,393 - WARNING - Ristorante 'Pasticceria PastiChéri' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,396 - WARNING - Ristorante 'Gelateria Olimpo' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,396 - WARNING - Prezzo anomalo per piatto 'SALSA ALGERINA DIP': €0.4
+2025-08-05 16:08:44,396 - WARNING - Prezzo anomalo per piatto 'KETCHUP DIP': €0.4
+2025-08-05 16:08:44,396 - WARNING - Prezzo anomalo per piatto 'MAYONESE DIP': €0.4
+2025-08-05 16:08:44,396 - WARNING - Prezzo anomalo per piatto 'SALSA AYO DIP': €0.4
+2025-08-05 16:08:44,397 - WARNING - Prezzo anomalo per piatto 'SALSA BBQ DIP': €0.4
+2025-08-05 16:08:44,397 - WARNING - Prezzo anomalo per piatto 'SALSA BURGER DIP': €0.4
+2025-08-05 16:08:44,397 - WARNING - Prezzo anomalo per piatto 'SAMURAI DIP': €0.4
+2025-08-05 16:08:44,408 - WARNING - Prezzo anomalo per piatto 'Coni in cialda sfusi': €0.3
+2025-08-05 16:08:44,408 - WARNING - Prezzo anomalo per piatto 'Coni in cialda sfusi al cacao': €0.3
+2025-08-05 16:08:44,408 - WARNING - Ristorante 'La Prosciutteria' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,425 - WARNING - Ristorante 'La Dudu Lab' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,443 - WARNING - Ristorante 'aMORTADELLA' scartato: solo 1 piatti validi
+2025-08-05 16:08:44,449 - WARNING - Ristorante 'La Chiatta' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,456 - WARNING - Ristorante 'Pasticceria Martesana' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,466 - WARNING - Ristorante 'Martinucci Laboratory' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,481 - WARNING - Ristorante 'Pasticceria Moschella' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,481 - WARNING - Ristorante 'GeLo-Ice Cream' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,485 - WARNING - Ristorante 'MALiA' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,485 - WARNING - Ristorante 'Greco 39' scartato: solo 1 piatti validi
+2025-08-05 16:08:44,486 - INFO - Processati 600/1131 ristoranti
+2025-08-05 16:08:44,486 - WARNING - Ristorante 'Usta Pizza - Kebap' scartato: solo 1 piatti validi
+2025-08-05 16:08:44,490 - WARNING - Ristorante 'Il Panino d'Oro Cafe' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,492 - WARNING - Ristorante 'Prince Food e Games' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,492 - WARNING - Ristorante 'Poku by Bomaki' scartato: indirizzo non Milano
+2025-08-05 16:08:44,492 - WARNING - Ristorante 'Lamian per te' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,497 - WARNING - Prezzo anomalo per piatto 'Forchetta': €0.2
+2025-08-05 16:08:44,497 - WARNING - Prezzo anomalo per piatto 'Cucchiaio': €0.2
+2025-08-05 16:08:44,497 - WARNING - Prezzo anomalo per piatto 'Bacchette': €0.2
+2025-08-05 16:08:44,500 - WARNING - Prezzo anomalo per piatto 'Salsa piccante': €0.3
+2025-08-05 16:08:44,500 - WARNING - Prezzo anomalo per piatto 'Salsa di soia': €0.3
+2025-08-05 16:08:44,500 - WARNING - Prezzo anomalo per piatto 'Salsa agrodolce': €0.3
+2025-08-05 16:08:44,500 - WARNING - Prezzo anomalo per piatto 'Salsa agrodolce e piccante': €0.3
+2025-08-05 16:08:44,504 - WARNING - Ristorante 'Pizzeria Gioia' scartato: solo 1 piatti validi
+2025-08-05 16:08:44,513 - WARNING - Prezzo anomalo per piatto 'Salsa teriyaki': €0.3
+2025-08-05 16:08:44,513 - WARNING - Prezzo anomalo per piatto 'Salsa di soya extra': €0.3
+2025-08-05 16:08:44,513 - WARNING - Prezzo anomalo per piatto 'Salsa agro piccante': €0.3
+2025-08-05 16:08:44,513 - WARNING - Prezzo anomalo per piatto 'Wasabi extra': €0.3
+2025-08-05 16:08:44,513 - WARNING - Prezzo anomalo per piatto 'Salsa di soia less salt': €0.3
+2025-08-05 16:08:44,513 - WARNING - Prezzo anomalo per piatto 'Salsa di ponzu': €0.3
+2025-08-05 16:08:44,513 - WARNING - Prezzo anomalo per piatto 'Salsa piccante': €0.3
+2025-08-05 16:08:44,513 - WARNING - Prezzo anomalo per piatto 'Zenzero extra': €0.3
+2025-08-05 16:08:44,513 - WARNING - Prezzo anomalo per piatto 'Salsa di soia senza glutine': €0.3
+2025-08-05 16:08:44,519 - WARNING - Ristorante 'Panini di Loli' scartato: solo 1 piatti validi
+2025-08-05 16:08:44,520 - WARNING - Prezzo anomalo per piatto 'Salsa Teriyaki': €0.4
+2025-08-05 16:08:44,520 - WARNING - Prezzo anomalo per piatto 'Salsa piccante （sriracha）': €0.4
+2025-08-05 16:08:44,520 - WARNING - Prezzo anomalo per piatto 'Salsa agropiccante': €0.4
+2025-08-05 16:08:44,520 - WARNING - Prezzo anomalo per piatto 'Spicy maionese': €0.4
+2025-08-05 16:08:44,520 - WARNING - Prezzo anomalo per piatto 'Salsa soia Extra': €0.4
+2025-08-05 16:08:44,520 - WARNING - Prezzo anomalo per piatto 'Wasabi extra': €0.4
+2025-08-05 16:08:44,520 - WARNING - Prezzo anomalo per piatto 'Zenzero extra': €0.4
+2025-08-05 16:08:44,524 - WARNING - Prezzo anomalo per piatto 'Biscotti della fortuna': €0.4
+2025-08-05 16:08:44,534 - WARNING - Prezzo anomalo per piatto 'Champagne brut Belle Epoque': €320.0
+2025-08-05 16:08:44,539 - WARNING - Prezzo anomalo per piatto 'Maionese': €0.4
+2025-08-05 16:08:44,539 - WARNING - Prezzo anomalo per piatto 'Ketchup': €0.4
+2025-08-05 16:08:44,539 - WARNING - Prezzo anomalo per piatto 'Bacchette': €0.3
+2025-08-05 16:08:44,539 - WARNING - Prezzo anomalo per piatto 'Posate di legno': €0.3
+2025-08-05 16:08:44,553 - WARNING - Ristorante 'Santo Taco' scartato: solo 1 piatti validi
+2025-08-05 16:08:44,564 - WARNING - Ristorante 'Pasticceria Clivati' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,574 - WARNING - Prezzo anomalo per piatto 'Maionese bustina': €0.15
+2025-08-05 16:08:44,574 - WARNING - Prezzo anomalo per piatto 'Ketchup bustina': €0.15
+2025-08-05 16:08:44,575 - WARNING - Prezzo anomalo per piatto 'Curry Mango': €0.45
+2025-08-05 16:08:44,575 - WARNING - Prezzo anomalo per piatto 'Barbecue': €0.45
+2025-08-05 16:08:44,584 - WARNING - Prezzo anomalo per piatto 'Sale, pepe, stecchini': €0.25
+2025-08-05 16:08:44,589 - WARNING - Ristorante 'Spacca' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,595 - WARNING - Ristorante 'Lei Poke Sushi' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,603 - WARNING - Prezzo anomalo per piatto 'Salsa di soia': €0.2
+2025-08-05 16:08:44,603 - WARNING - Prezzo anomalo per piatto 'Salsa mango': €0.2
+2025-08-05 16:08:44,603 - WARNING - Prezzo anomalo per piatto 'Salsa teriyaki': €0.2
+2025-08-05 16:08:44,603 - WARNING - Prezzo anomalo per piatto 'Salsa agropiccante': €0.2
+2025-08-05 16:08:44,603 - WARNING - Prezzo anomalo per piatto 'Maionese': €0.2
+2025-08-05 16:08:44,603 - WARNING - Prezzo anomalo per piatto 'Salsa piccante': €0.2
+2025-08-05 16:08:44,603 - WARNING - Prezzo anomalo per piatto 'Salsa ponzu': €0.2
+2025-08-05 16:08:44,603 - WARNING - Prezzo anomalo per piatto 'Spicy mayo': €0.2
+2025-08-05 16:08:44,606 - WARNING - Ristorante 'McDonald's' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,607 - WARNING - Ristorante 'La colazione del San Filippo' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,608 - WARNING - Ristorante 'Pasticceria San Gregorio - Artigianale da 70 anni' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,608 - WARNING - Ristorante 'Bar Leopoli' scartato: solo 1 piatti validi
+2025-08-05 16:08:44,608 - WARNING - Ristorante 'Caffè Napoli' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,613 - WARNING - Ristorante 'Pasticceria Martesana' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,619 - WARNING - Ristorante 'Bagel House' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,623 - WARNING - Ristorante 'Donut Land' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,630 - WARNING - Ristorante 'McDonald's' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,630 - WARNING - Ristorante 'Caffè e Brioches' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,630 - WARNING - Ristorante 'Caffè Centrale' scartato: solo 1 piatti validi
+2025-08-05 16:08:44,637 - WARNING - Prezzo anomalo per piatto 'Cono': €0.25
+2025-08-05 16:08:44,637 - WARNING - Prezzo anomalo per piatto 'Coppetta e cucchiaino': €0.25
+2025-08-05 16:08:44,637 - WARNING - Ristorante 'Cappu-cin' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,643 - WARNING - Prezzo anomalo per piatto 'Coppetta 1 pezzo': €0.3
+2025-08-05 16:08:44,651 - WARNING - Prezzo anomalo per piatto 'Salsa di soia': €0.3
+2025-08-05 16:08:44,651 - WARNING - Prezzo anomalo per piatto 'Salsa Piccante': €0.3
+2025-08-05 16:08:44,651 - WARNING - Prezzo anomalo per piatto 'Salga Agrodolce': €0.3
+2025-08-05 16:08:44,685 - WARNING - Ristorante 'Ristorante pizzeria Morganti 2' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,685 - WARNING - Ristorante 'Maki Poke' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,685 - WARNING - Ristorante 'Il Gelatiere' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,690 - WARNING - Prezzo anomalo per piatto 'Salsa agrodolce': €0.2
+2025-08-05 16:08:44,690 - WARNING - Prezzo anomalo per piatto 'Salsa di soia': €0.2
+2025-08-05 16:08:44,690 - WARNING - Prezzo anomalo per piatto 'Zenzero': €0.2
+2025-08-05 16:08:44,690 - WARNING - Prezzo anomalo per piatto 'Wasabi': €0.2
+2025-08-05 16:08:44,690 - WARNING - Prezzo anomalo per piatto 'Salsa piccante': €0.2
+2025-08-05 16:08:44,690 - WARNING - Prezzo anomalo per piatto 'Salsa agropiccante': €0.2
+2025-08-05 16:08:44,690 - WARNING - Prezzo anomalo per piatto 'Salsa teriyaki': €0.2
+2025-08-05 16:08:44,701 - WARNING - Ristorante 'Zio Michele Pasticceria rosticceria Siciliana' scartato: solo 1 piatti validi
+2025-08-05 16:08:44,703 - WARNING - Prezzo anomalo per piatto 'Bacchette': €0.1
+2025-08-05 16:08:44,703 - WARNING - Prezzo anomalo per piatto 'Cucchiaio in legno': €0.1
+2025-08-05 16:08:44,703 - WARNING - Prezzo anomalo per piatto 'Forchetta in legno': €0.1
+2025-08-05 16:08:44,711 - WARNING - Prezzo anomalo per piatto 'Biscotto della fortuna': €0.3
+2025-08-05 16:08:44,721 - WARNING - Prezzo anomalo per piatto 'Salsa agrodolce': €0.2
+2025-08-05 16:08:44,721 - WARNING - Prezzo anomalo per piatto 'Salsa di soia': €0.2
+2025-08-05 16:08:44,721 - WARNING - Prezzo anomalo per piatto 'Zenzero': €0.2
+2025-08-05 16:08:44,721 - WARNING - Prezzo anomalo per piatto 'Wasabi': €0.2
+2025-08-05 16:08:44,721 - WARNING - Prezzo anomalo per piatto 'Salsa piccante': €0.2
+2025-08-05 16:08:44,721 - WARNING - Prezzo anomalo per piatto 'Salsa agropiccante': €0.2
+2025-08-05 16:08:44,721 - WARNING - Prezzo anomalo per piatto 'Salsa teriyaki': €0.2
+2025-08-05 16:08:44,724 - WARNING - Prezzo anomalo per piatto 'Bacchette e Tovagliolo': €0.15
+2025-08-05 16:08:44,724 - WARNING - Prezzo anomalo per piatto 'Forchetta e Tovagliolo': €0.15
+2025-08-05 16:08:44,724 - WARNING - Prezzo anomalo per piatto 'Salsa di soia in bustina': €0.15
+2025-08-05 16:08:44,750 - INFO - Processati 800/1131 ristoranti
+2025-08-05 16:08:44,755 - WARNING - Prezzo anomalo per piatto 'Extra - Ketchup': €0.35
+2025-08-05 16:08:44,755 - WARNING - Prezzo anomalo per piatto 'Extra - Maionese': €0.35
+2025-08-05 16:08:44,755 - WARNING - Prezzo anomalo per piatto 'Extra - Salsa BBQ': €0.35
+2025-08-05 16:08:44,755 - WARNING - Prezzo anomalo per piatto 'Extra - Salsa alioli': €0.35
+2025-08-05 16:08:44,755 - WARNING - Prezzo anomalo per piatto 'Extra - Salsa tonnata': €0.35
+2025-08-05 16:08:44,755 - WARNING - Prezzo anomalo per piatto 'Extra - Senape e miele': €0.35
+2025-08-05 16:08:44,755 - WARNING - Prezzo anomalo per piatto 'Extra - Salsa brava': €0.35
+2025-08-05 16:08:44,760 - WARNING - Prezzo anomalo per piatto 'Cono wafer vuoto': €0.2
+2025-08-05 16:08:44,760 - WARNING - Ristorante 'Gelateria Marabù Villa San Giovanni' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,768 - WARNING - Ristorante 'Fradiavolo' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,780 - WARNING - Ristorante 'Noyi Chef Sushi' scartato: solo 1 piatti validi
+2025-08-05 16:08:44,780 - WARNING - Ristorante 'O'Shop Pizzium' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,792 - WARNING - Ristorante 'Caffè Napoli' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,823 - WARNING - Prezzo anomalo per piatto '514. Salsa teriyaki': €0.3
+2025-08-05 16:08:44,823 - WARNING - Prezzo anomalo per piatto '514. Salsa agropiccante': €0.3
+2025-08-05 16:08:44,823 - WARNING - Prezzo anomalo per piatto '513. Wasabi': €0.2
+2025-08-05 16:08:44,823 - WARNING - Prezzo anomalo per piatto '513. Zenzero': €0.2
+2025-08-05 16:08:44,823 - WARNING - Prezzo anomalo per piatto '513. Soia': €0.2
+2025-08-05 16:08:44,826 - WARNING - Prezzo anomalo per piatto 'Bustina maionese': €0.2
+2025-08-05 16:08:44,826 - WARNING - Prezzo anomalo per piatto 'Bustina ketchup': €0.2
+2025-08-05 16:08:44,831 - WARNING - Ristorante 'KAO YAN' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,854 - WARNING - Prezzo anomalo per piatto 'Bacchette monouso': €0.1
+2025-08-05 16:08:44,854 - WARNING - Prezzo anomalo per piatto 'Biscotto della fortuna': €0.1
+2025-08-05 16:08:44,860 - WARNING - Prezzo anomalo per piatto 'Maionese Heinz': €0.3
+2025-08-05 16:08:44,860 - WARNING - Prezzo anomalo per piatto 'Ketchup Heinz': €0.3
+2025-08-05 16:08:44,890 - WARNING - Ristorante 'O'Shop Pizzium' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,890 - WARNING - Ristorante 'Sleppa' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,892 - WARNING - Prezzo anomalo per piatto 'Wasabi e Zenzero': €0.24
+2025-08-05 16:08:44,892 - WARNING - Prezzo anomalo per piatto 'Extra Salse': €0.24
+2025-08-05 16:08:44,892 - WARNING - Prezzo anomalo per piatto 'Extra Posate': €0.24
+2025-08-05 16:08:44,892 - WARNING - Prezzo anomalo per piatto 'Extra Salsa di soia': €0.24
+2025-08-05 16:08:44,900 - WARNING - Prezzo anomalo per piatto 'Salsa di soia': €0.3
+2025-08-05 16:08:44,900 - WARNING - Prezzo anomalo per piatto 'Salsa agrodolce': €0.3
+2025-08-05 16:08:44,900 - WARNING - Prezzo anomalo per piatto 'Salsa agropiccante': €0.3
+2025-08-05 16:08:44,904 - INFO - Processati 900/1131 ristoranti
+2025-08-05 16:08:44,906 - WARNING - Prezzo anomalo per piatto 'Maionese': €0.49
+2025-08-05 16:08:44,906 - WARNING - Prezzo anomalo per piatto 'Ketchup': €0.49
+2025-08-05 16:08:44,917 - WARNING - Ristorante 'McDonald's' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,918 - WARNING - Ristorante 'La Dolce Vita - L'Arte del Dolce' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,919 - WARNING - Ristorante 'Caffè Napoli' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,919 - WARNING - Ristorante 'Marlà Pasticceria' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,929 - WARNING - Ristorante 'Venchi Gelato e Cioccolato' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,933 - WARNING - Prezzo anomalo per piatto 'Salsa piccante Hot Devil': €0.3
+2025-08-05 16:08:44,933 - WARNING - Prezzo anomalo per piatto 'Ketchup': €0.3
+2025-08-05 16:08:44,933 - WARNING - Prezzo anomalo per piatto 'Maionese': €0.3
+2025-08-05 16:08:44,933 - WARNING - Prezzo anomalo per piatto 'Barbecue': €0.3
+2025-08-05 16:08:44,934 - WARNING - Prezzo anomalo per piatto 'Agrodolce': €0.3
+2025-08-05 16:08:44,934 - WARNING - Prezzo anomalo per piatto 'Senape': €0.3
+2025-08-05 16:08:44,934 - WARNING - Ristorante 'McDonald's' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,951 - WARNING - Ristorante 'Pasticceria Caravaggio' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,955 - WARNING - Prezzo anomalo per piatto 'Salsa maionese 10 g': €0.2
+2025-08-05 16:08:44,955 - WARNING - Prezzo anomalo per piatto 'Salsa ketchup 10 g': €0.2
+2025-08-05 16:08:44,976 - WARNING - Ristorante 'Poke 4 You' scartato: solo 1 piatti validi
+2025-08-05 16:08:44,983 - WARNING - Prezzo anomalo per piatto 'Cono vuoto': €0.4
+2025-08-05 16:08:44,984 - WARNING - Ristorante 'Latteria Medini' scartato: solo 0 piatti validi
+2025-08-05 16:08:44,984 - WARNING - Ristorante 'Osteria Rap del Gargano' scartato: solo 1 piatti validi
+2025-08-05 16:08:45,017 - WARNING - Ristorante 'La Prosciutteria' scartato: solo 0 piatti validi
+2025-08-05 16:08:45,018 - WARNING - Prezzo anomalo per piatto 'Maionese Gaia': €0.25
+2025-08-05 16:08:45,018 - WARNING - Prezzo anomalo per piatto 'Ketchup Gaia': €0.25
+2025-08-05 16:08:45,020 - INFO - Processati 1000/1131 ristoranti
+2025-08-05 16:08:45,034 - WARNING - Ristorante 'Pizza Guru' scartato: solo 0 piatti validi
+2025-08-05 16:08:45,052 - WARNING - Prezzo anomalo per piatto 'Salsa maionese': €0.3
+2025-08-05 16:08:45,053 - WARNING - Prezzo anomalo per piatto 'Salsa sriracha': €0.3
+2025-08-05 16:08:45,053 - WARNING - Prezzo anomalo per piatto 'Salsa di soia': €0.3
+2025-08-05 16:08:45,053 - WARNING - Prezzo anomalo per piatto 'Salsa piccante': €0.3
+2025-08-05 16:08:45,053 - WARNING - Prezzo anomalo per piatto 'Salsa agropiccante': €0.3
+2025-08-05 16:08:45,053 - WARNING - Prezzo anomalo per piatto 'Salsa agrodolce': €0.3
+2025-08-05 16:08:45,055 - WARNING - Ristorante 'Annarè - Milano' scartato: solo 0 piatti validi
+2025-08-05 16:08:45,056 - WARNING - Prezzo anomalo per piatto 'Bacchette': €0.1
+2025-08-05 16:08:45,056 - WARNING - Prezzo anomalo per piatto 'Forchetta': €0.1
+2025-08-05 16:08:45,059 - WARNING - Ristorante 'Pizzeria Forza Kayla' scartato: solo 1 piatti validi
+2025-08-05 16:08:45,067 - WARNING - Prezzo anomalo per piatto 'Premium box': €206.0
+2025-08-05 16:08:45,078 - WARNING - Prezzo anomalo per piatto 'Bacchetta': €0.2
+2025-08-05 16:08:45,098 - WARNING - Prezzo anomalo per piatto 'Ketchup': €0.3
+2025-08-05 16:08:45,098 - WARNING - Prezzo anomalo per piatto 'Maionese': €0.3
+2025-08-05 16:08:45,098 - WARNING - Prezzo anomalo per piatto 'Salsa 1000 island': €0.3
+2025-08-05 16:08:45,098 - WARNING - Prezzo anomalo per piatto 'Salsa Ranch': €0.3
+2025-08-05 16:08:45,098 - WARNING - Prezzo anomalo per piatto 'Honey Mustard': €0.3
+2025-08-05 16:08:45,099 - WARNING - Prezzo anomalo per piatto 'Salsa Barbecue': €0.3
+2025-08-05 16:08:45,122 - WARNING - Prezzo anomalo per piatto 'bacchette di legno': €0.2
+2025-08-05 16:08:45,123 - WARNING - Ristorante 'Spago - Arte e Cucina' scartato: solo 1 piatti validi
+2025-08-05 16:08:45,135 - WARNING - Ristorante 'MALiA' scartato: solo 0 piatti validi
+2025-08-05 16:08:45,135 - WARNING - Ristorante 'Tette delle Monache di Nonna Lucia' scartato: solo 0 piatti validi
+2025-08-05 16:08:45,136 - WARNING - Prezzo anomalo per piatto 'POSATE': €0.4
+2025-08-05 16:08:45,137 - WARNING - Prezzo anomalo per piatto 'Forchetta 1 pezzo': €0.2
+2025-08-05 16:08:45,137 - WARNING - Prezzo anomalo per piatto 'Bacchetta 1 paio': €0.1
+2025-08-05 16:08:45,146 - WARNING - Prezzo anomalo per piatto 'Cono - 1 pezzo': €0.4
+2025-08-05 16:08:45,147 - WARNING - Prezzo anomalo per piatto 'Coppetta e Palettina - 1 pezzo': €0.3
+2025-08-05 16:08:45,160 - WARNING - Prezzo anomalo per piatto 'Bacchette': €0.1
+2025-08-05 16:08:45,160 - WARNING - Prezzo anomalo per piatto 'Forchetta': €0.1
+2025-08-05 16:08:45,165 - INFO - Processati 1100/1131 ristoranti
+2025-08-05 16:08:45,172 - WARNING - Ristorante 'Ono Sushi Experience' scartato: indirizzo non Milano
+2025-08-05 16:08:45,196 - WARNING - Prezzo anomalo per piatto 'EXTRA - KIT BACCHET EXTRA': €0.2
+2025-08-05 16:08:45,202 - WARNING - Prezzo anomalo per piatto 'Cono': €0.3
+2025-08-05 16:08:45,203 - WARNING - Ristorante 'Vetusta Insigna' scartato: solo 1 piatti validi
+2025-08-05 16:08:45,205 - WARNING - Prezzo anomalo per piatto 'Coppa vuota': €0.2
+2025-08-05 16:08:45,212 - WARNING - Prezzo anomalo per piatto 'Forchetta': €0.2
+2025-08-05 16:08:45,212 - INFO - Inizio deduplicazione piatti
+2025-08-05 16:08:45,230 - INFO - Rimossi 9082 duplicati su 49743 piatti
+2025-08-05 16:08:45,231 - INFO - Salvataggio files risultanti
+2025-08-05 16:08:46,047 - INFO - ETL completato: 1009 ristoranti, 40661 piatti processati
+2025-08-05 16:09:53,968 - INFO - Inizio processo ETL Glovo
+2025-08-05 16:09:54,025 - INFO - Caricati 1131 ristoranti dal file: /Users/gloria.brembilla/Documents/AIDA/Modulo1/02 - BI/etl_ristoranti_milano/scripts/etl/../../data/raw/ristoranti_glovo_milano.json
+2025-08-05 16:09:54,026 - INFO - Inizio processo di pulizia dati
+2025-08-05 16:09:54,030 - WARNING - Ristorante 'La Creperia' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,030 - WARNING - Ristorante 'Al noor ristorante grill pizzeria' scartato: indirizzo non Milano
+2025-08-05 16:09:54,034 - WARNING - Ristorante 'Burger King' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,034 - WARNING - Ristorante 'Billy Tacos y Burritos' scartato: indirizzo non Milano
+2025-08-05 16:09:54,035 - WARNING - Prezzo anomalo per piatto 'POSATE': €0.4
+2025-08-05 16:09:54,035 - WARNING - Ristorante 'McDonald's' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,038 - WARNING - Ristorante 'Gelateria La Romana' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,040 - WARNING - Prezzo anomalo per piatto 'Ketchup': €0.2
+2025-08-05 16:09:54,048 - WARNING - Prezzo anomalo per piatto 'Tignanello': €180.0
+2025-08-05 16:09:54,059 - WARNING - Prezzo anomalo per piatto 'EXTRA - KIT BACCHET EXTRA': €0.2
+2025-08-05 16:09:54,066 - WARNING - Ristorante 'Burger King' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,071 - WARNING - Ristorante 'Ben e Jerry's Official Store' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,071 - WARNING - Ristorante 'Poke Kcal' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,084 - WARNING - Ristorante 'Unica' scartato: solo 1 piatti validi
+2025-08-05 16:09:54,086 - WARNING - Ristorante 'Le clavier' scartato: solo 1 piatti validi
+2025-08-05 16:09:54,111 - WARNING - Prezzo anomalo per piatto 'Salsa di Soia grande': €0.35
+2025-08-05 16:09:54,111 - WARNING - Prezzo anomalo per piatto 'Salsa Teriyaki': €0.3
+2025-08-05 16:09:54,112 - WARNING - Prezzo anomalo per piatto 'Salsa di Soia piccola': €0.2
+2025-08-05 16:09:54,112 - WARNING - Prezzo anomalo per piatto 'Salsa Agrodolce': €0.2
+2025-08-05 16:09:54,112 - WARNING - Prezzo anomalo per piatto 'Salsa Agropiccante': €0.2
+2025-08-05 16:09:54,112 - WARNING - Ristorante 'Burger King' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,120 - WARNING - Prezzo anomalo per piatto 'Posate': €0.3
+2025-08-05 16:09:54,120 - WARNING - Ristorante 'PokeeGo' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,130 - WARNING - Ristorante 'La Pergola 2' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,134 - WARNING - Ristorante 'Il Trancio d'oro' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,139 - WARNING - Prezzo anomalo per piatto 'Maionese': €0.2
+2025-08-05 16:09:54,139 - WARNING - Prezzo anomalo per piatto 'Bustina di ketchup': €0.2
+2025-08-05 16:09:54,140 - WARNING - Prezzo anomalo per piatto 'Salsa piccante Hot Devil': €0.45
+2025-08-05 16:09:54,140 - WARNING - Prezzo anomalo per piatto 'Ketchup': €0.45
+2025-08-05 16:09:54,140 - WARNING - Prezzo anomalo per piatto 'Maionese': €0.45
+2025-08-05 16:09:54,140 - WARNING - Prezzo anomalo per piatto 'Barbecue': €0.45
+2025-08-05 16:09:54,140 - WARNING - Prezzo anomalo per piatto 'Agrodolce': €0.45
+2025-08-05 16:09:54,140 - WARNING - Prezzo anomalo per piatto 'Senape': €0.45
+2025-08-05 16:09:54,140 - WARNING - Ristorante 'McDonald's' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,153 - WARNING - Ristorante 'Annarè - Milano' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,157 - WARNING - Prezzo anomalo per piatto 'Ketchup': €0.4
+2025-08-05 16:09:54,157 - WARNING - Prezzo anomalo per piatto 'Maionese': €0.4
+2025-08-05 16:09:54,170 - WARNING - Prezzo anomalo per piatto 'Salsa Teriyaki': €0.34
+2025-08-05 16:09:54,170 - WARNING - Prezzo anomalo per piatto 'Salsa Agrodolce leggermente piccante': €0.34
+2025-08-05 16:09:54,170 - WARNING - Prezzo anomalo per piatto 'Salsa Piccante': €0.34
+2025-08-05 16:09:54,170 - WARNING - Prezzo anomalo per piatto 'Wasabi': €0.34
+2025-08-05 16:09:54,170 - WARNING - Prezzo anomalo per piatto 'Zenzero': €0.34
+2025-08-05 16:09:54,181 - WARNING - Prezzo anomalo per piatto 'Zenzero': €0.24
+2025-08-05 16:09:54,181 - WARNING - Prezzo anomalo per piatto 'Wasabi': €0.24
+2025-08-05 16:09:54,181 - WARNING - Prezzo anomalo per piatto 'Salsa di Soia': €0.24
+2025-08-05 16:09:54,181 - WARNING - Prezzo anomalo per piatto 'Salsa Teriyaki': €0.24
+2025-08-05 16:09:54,181 - WARNING - Prezzo anomalo per piatto 'Salsa Agrodolce': €0.24
+2025-08-05 16:09:54,181 - WARNING - Prezzo anomalo per piatto 'Salsa Piccante': €0.16
+2025-08-05 16:09:54,181 - WARNING - Ristorante 'Ben e Jerry's Official Store' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,189 - WARNING - Prezzo anomalo per piatto 'Salsa di Soia': €0.24
+2025-08-05 16:09:54,189 - WARNING - Prezzo anomalo per piatto 'Zenzero': €0.24
+2025-08-05 16:09:54,189 - WARNING - Prezzo anomalo per piatto 'Wasabi': €0.24
+2025-08-05 16:09:54,190 - WARNING - Prezzo anomalo per piatto 'Salsa Agrodolce': €0.24
+2025-08-05 16:09:54,190 - WARNING - Prezzo anomalo per piatto 'Salsa Piccante': €0.24
+2025-08-05 16:09:54,190 - WARNING - Prezzo anomalo per piatto 'Salsa Teriyaki': €0.24
+2025-08-05 16:09:54,190 - WARNING - Prezzo anomalo per piatto 'Cono croccante fatto in casa': €0.4
+2025-08-05 16:09:54,190 - WARNING - Prezzo anomalo per piatto 'Cono croccante fatto in casa': €0.4
+2025-08-05 16:09:54,190 - WARNING - Prezzo anomalo per piatto 'Coppetta e palettina': €0.2
+2025-08-05 16:09:54,194 - INFO - Processati 100/1131 ristoranti
+2025-08-05 16:09:54,215 - WARNING - Ristorante 'Sweet Dreams' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,221 - WARNING - Ristorante 'Dolce America' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,222 - WARNING - Ristorante 'Cik' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,228 - WARNING - Prezzo anomalo per piatto 'Bacchette': €0.1
+2025-08-05 16:09:54,228 - WARNING - Prezzo anomalo per piatto 'Forchetta': €0.1
+2025-08-05 16:09:54,235 - WARNING - Prezzo anomalo per piatto 'Coni x1': €0.4
+2025-08-05 16:09:54,236 - WARNING - Ristorante 'Glory POP' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,252 - WARNING - Ristorante 'GNOMOGELATO' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,255 - WARNING - Prezzo anomalo per piatto 'Salsa di soia': €0.3
+2025-08-05 16:09:54,255 - WARNING - Prezzo anomalo per piatto 'Salsa piccante': €0.3
+2025-08-05 16:09:54,255 - WARNING - Prezzo anomalo per piatto 'salsa agrodolce': €0.3
+2025-08-05 16:09:54,255 - WARNING - Prezzo anomalo per piatto 'Salsa agrodolce piccante': €0.3
+2025-08-05 16:09:54,265 - WARNING - Prezzo anomalo per piatto 'Salsa di Soia': €0.24
+2025-08-05 16:09:54,265 - WARNING - Prezzo anomalo per piatto 'Zenzero': €0.24
+2025-08-05 16:09:54,265 - WARNING - Prezzo anomalo per piatto 'Wasabi': €0.24
+2025-08-05 16:09:54,265 - WARNING - Prezzo anomalo per piatto 'Salsa Agrodolce': €0.24
+2025-08-05 16:09:54,265 - WARNING - Prezzo anomalo per piatto 'Salsa Piccante': €0.24
+2025-08-05 16:09:54,265 - WARNING - Prezzo anomalo per piatto 'Salsa Teriyaki': €0.24
+2025-08-05 16:09:54,271 - WARNING - Ristorante 'Emi poke e sushi' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,280 - WARNING - Prezzo anomalo per piatto 'Coppetta gelato': €0.3
+2025-08-05 16:09:54,280 - WARNING - Prezzo anomalo per piatto 'Cono a cialda': €0.3
+2025-08-05 16:09:54,280 - WARNING - Prezzo anomalo per piatto 'Coppetta gelato': €0.3
+2025-08-05 16:09:54,280 - WARNING - Prezzo anomalo per piatto 'Cono a cialda': €0.3
+2025-08-05 16:09:54,287 - WARNING - Prezzo anomalo per piatto '100.SALSA DI SOIA': €0.3
+2025-08-05 16:09:54,287 - WARNING - Prezzo anomalo per piatto '102.SALSA CHILI': €0.3
+2025-08-05 16:09:54,287 - WARNING - Prezzo anomalo per piatto '104.SALSA AGRODOLCE': €0.3
+2025-08-05 16:09:54,289 - WARNING - Ristorante 'Guzzo-Burger Ignoranti' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,293 - WARNING - Prezzo anomalo per piatto 'cono Joy': €0.4
+2025-08-05 16:09:54,293 - WARNING - Prezzo anomalo per piatto 'coppetta': €0.3
+2025-08-05 16:09:54,295 - WARNING - Prezzo anomalo per piatto 'Cono vuoto': €0.3
+2025-08-05 16:09:54,295 - WARNING - Prezzo anomalo per piatto 'Coppetta vuota': €0.2
+2025-08-05 16:09:54,312 - WARNING - Prezzo anomalo per piatto 'Salsa di soia 30ml': €0.3
+2025-08-05 16:09:54,313 - WARNING - Prezzo anomalo per piatto 'Salsa agro piccante 30 ml': €0.3
+2025-08-05 16:09:54,313 - WARNING - Prezzo anomalo per piatto 'Salsa teriyaki 30 ml': €0.3
+2025-08-05 16:09:54,313 - WARNING - Prezzo anomalo per piatto 'Salsa maionese piccante 30 ml': €0.3
+2025-08-05 16:09:54,315 - WARNING - Prezzo anomalo per piatto 'Salsa di soia extra': €0.3
+2025-08-05 16:09:54,315 - WARNING - Prezzo anomalo per piatto 'Salsa agrodolce extra': €0.3
+2025-08-05 16:09:54,315 - WARNING - Prezzo anomalo per piatto 'Salsa piccante extra': €0.3
+2025-08-05 16:09:54,315 - WARNING - Prezzo anomalo per piatto 'Bacchette': €0.2
+2025-08-05 16:09:54,315 - WARNING - Prezzo anomalo per piatto 'Forchetta / cucchiaio': €0.2
+2025-08-05 16:09:54,325 - WARNING - Prezzo anomalo per piatto 'Ruinart blanc de blanc': €170.0
+2025-08-05 16:09:54,336 - WARNING - Prezzo anomalo per piatto 'Tignanello Antinori': €180.0
+2025-08-05 16:09:54,338 - WARNING - Prezzo anomalo per piatto 'Premium box': €206.0
+2025-08-05 16:09:54,367 - WARNING - Prezzo anomalo per piatto 'Maionese monoporzione': €0.2
+2025-08-05 16:09:54,371 - INFO - Processati 200/1131 ristoranti
+2025-08-05 16:09:54,375 - WARNING - Prezzo anomalo per piatto 'Un agnello intero': €500.0
+2025-08-05 16:09:54,375 - WARNING - Prezzo anomalo per piatto 'Mezzo agnello': €300.0
+2025-08-05 16:09:54,375 - WARNING - Prezzo anomalo per piatto 'Un quarto di agnello': €180.0
+2025-08-05 16:09:54,378 - WARNING - Ristorante 'Istanbul kebab' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,390 - WARNING - Prezzo anomalo per piatto 'Ketchup': €0.2
+2025-08-05 16:09:54,390 - WARNING - Prezzo anomalo per piatto 'Maionese': €0.2
+2025-08-05 16:09:54,394 - WARNING - Prezzo anomalo per piatto 'Louis Roederer Cristal Brut 2015': €420.0
+2025-08-05 16:09:54,394 - WARNING - Prezzo anomalo per piatto 'Dom Perignon Vintage 2012': €410.0
+2025-08-05 16:09:54,394 - WARNING - Prezzo anomalo per piatto 'Ruinart Blanc de Blancs Brut NV': €210.0
+2025-08-05 16:09:54,394 - WARNING - Prezzo anomalo per piatto 'Ruinart R de ruinart Brut NV': €155.0
+2025-08-05 16:09:54,394 - WARNING - Prezzo anomalo per piatto 'Tenuta san giudo Sassicaia 2020': €520.0
+2025-08-05 16:09:54,394 - WARNING - Prezzo anomalo per piatto 'Gaja Barbaresco 2019': €490.0
+2025-08-05 16:09:54,402 - WARNING - Ristorante 'Gelateria le Colonne' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,423 - WARNING - Prezzo anomalo per piatto 'Salsa di soia': €0.3
+2025-08-05 16:09:54,423 - WARNING - Prezzo anomalo per piatto 'Salsa di piccante': €0.3
+2025-08-05 16:09:54,423 - WARNING - Prezzo anomalo per piatto 'Salsa di agrodolce': €0.3
+2025-08-05 16:09:54,434 - WARNING - Prezzo anomalo per piatto 'Forchetta Extra': €0.2
+2025-08-05 16:09:54,434 - WARNING - Prezzo anomalo per piatto 'Bacchetta Extra': €0.2
+2025-08-05 16:09:54,435 - WARNING - Ristorante 'Alice Pizza' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,446 - WARNING - Prezzo anomalo per piatto 'Bustina di ketchup': €0.3
+2025-08-05 16:09:54,446 - WARNING - Prezzo anomalo per piatto 'Bustina di maionese': €0.3
+2025-08-05 16:09:54,451 - WARNING - Prezzo anomalo per piatto 'POSATE': €0.2
+2025-08-05 16:09:54,453 - WARNING - Ristorante 'Cornetto Pazzo' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,479 - WARNING - Prezzo anomalo per piatto 'Ketchup - bustina': €0.3
+2025-08-05 16:09:54,485 - WARNING - Prezzo anomalo per piatto 'Cono medio biscotto': €0.25
+2025-08-05 16:09:54,485 - WARNING - Prezzo anomalo per piatto 'Cono Wafer': €0.15
+2025-08-05 16:09:54,496 - WARNING - Prezzo anomalo per piatto 'Salsa di Soia': €0.24
+2025-08-05 16:09:54,496 - WARNING - Prezzo anomalo per piatto 'Zenzero': €0.24
+2025-08-05 16:09:54,496 - WARNING - Prezzo anomalo per piatto 'Wasabi': €0.24
+2025-08-05 16:09:54,496 - WARNING - Prezzo anomalo per piatto 'Salsa Agrodolce': €0.24
+2025-08-05 16:09:54,496 - WARNING - Prezzo anomalo per piatto 'Salsa Piccante': €0.24
+2025-08-05 16:09:54,497 - WARNING - Prezzo anomalo per piatto 'Salsa Teriyaki': €0.24
+2025-08-05 16:09:54,503 - WARNING - Prezzo anomalo per piatto 'Cono arrotolato vuoto': €0.3
+2025-08-05 16:09:54,503 - WARNING - Prezzo anomalo per piatto 'Coppetta monouso in carta': €0.3
+2025-08-05 16:09:54,518 - WARNING - Ristorante 'Officine del Gelato' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,528 - WARNING - Ristorante 'Gelateria La Romana' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,529 - WARNING - Prezzo anomalo per piatto 'Ketchup': €0.2
+2025-08-05 16:09:54,532 - INFO - Processati 300/1131 ristoranti
+2025-08-05 16:09:54,536 - WARNING - Prezzo anomalo per piatto 'Ketchup': €0.3
+2025-08-05 16:09:54,536 - WARNING - Prezzo anomalo per piatto 'Maionese': €0.3
+2025-08-05 16:09:54,536 - WARNING - Prezzo anomalo per piatto 'Salsa 1000 island': €0.3
+2025-08-05 16:09:54,536 - WARNING - Prezzo anomalo per piatto 'Salsa Ranch': €0.3
+2025-08-05 16:09:54,536 - WARNING - Prezzo anomalo per piatto 'Honey Mustard': €0.3
+2025-08-05 16:09:54,536 - WARNING - Prezzo anomalo per piatto 'Salsa Barbecue': €0.3
+2025-08-05 16:09:54,560 - WARNING - Prezzo anomalo per piatto 'Salsa Teriyaki': €0.34
+2025-08-05 16:09:54,560 - WARNING - Prezzo anomalo per piatto 'Salsa Agrodolce leggermente piccante': €0.34
+2025-08-05 16:09:54,560 - WARNING - Prezzo anomalo per piatto 'Salsa Piccante': €0.34
+2025-08-05 16:09:54,560 - WARNING - Prezzo anomalo per piatto 'Wasabi': €0.34
+2025-08-05 16:09:54,560 - WARNING - Prezzo anomalo per piatto 'Zenzero': €0.34
+2025-08-05 16:09:54,571 - WARNING - Ristorante 'Spùn Tiramisù' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,579 - WARNING - Prezzo anomalo per piatto 'Bacchetta': €0.2
+2025-08-05 16:09:54,580 - WARNING - Ristorante 'Yuan Loreto' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,585 - WARNING - Ristorante 'Égalité' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,587 - WARNING - Ristorante 'Pasticceria Gelsomina' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,610 - WARNING - Ristorante 'Pasticceria Tipiace' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,616 - WARNING - Ristorante 'PokeeGo' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,621 - WARNING - Ristorante 'Mamma Tteokbokki' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,627 - WARNING - Prezzo anomalo per piatto 'Ketcup': €0.4
+2025-08-05 16:09:54,627 - WARNING - Prezzo anomalo per piatto 'Maionese': €0.4
+2025-08-05 16:09:54,627 - WARNING - Prezzo anomalo per piatto 'Salsa barbecue': €0.4
+2025-08-05 16:09:54,628 - WARNING - Prezzo anomalo per piatto 'Condimenti e Posate (Olio, Sale, Aceto)': €0.4
+2025-08-05 16:09:54,628 - WARNING - Prezzo anomalo per piatto 'Salsa Maionese': €0.3
+2025-08-05 16:09:54,628 - WARNING - Prezzo anomalo per piatto 'Salsa Barbecue': €0.3
+2025-08-05 16:09:54,628 - WARNING - Prezzo anomalo per piatto 'Salsa Ketchup': €0.3
+2025-08-05 16:09:54,635 - WARNING - Prezzo anomalo per piatto 'Forchetta Extra': €0.2
+2025-08-05 16:09:54,635 - WARNING - Prezzo anomalo per piatto 'Bacchetta Extra': €0.2
+2025-08-05 16:09:54,636 - WARNING - Ristorante 'Alice Pizza' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,639 - WARNING - Prezzo anomalo per piatto 'Bacchette': €0.1
+2025-08-05 16:09:54,639 - WARNING - Prezzo anomalo per piatto 'Forchetta': €0.1
+2025-08-05 16:09:54,643 - WARNING - Prezzo anomalo per piatto 'Coppetta e cucchiaino': €0.15
+2025-08-05 16:09:54,644 - WARNING - Ristorante 'Aroma Napoletano' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,653 - WARNING - Prezzo anomalo per piatto 'Bicchiere': €0.4
+2025-08-05 16:09:54,655 - WARNING - Prezzo anomalo per piatto 'Cono cialda - 1 pezzo': €0.3
+2025-08-05 16:09:54,656 - WARNING - Prezzo anomalo per piatto 'Salsa Teriyaki': €0.4
+2025-08-05 16:09:54,656 - WARNING - Prezzo anomalo per piatto 'Salsa di Soia': €0.4
+2025-08-05 16:09:54,656 - WARNING - Prezzo anomalo per piatto 'Salsa Piccante': €0.4
+2025-08-05 16:09:54,656 - WARNING - Prezzo anomalo per piatto 'Wasabi': €0.4
+2025-08-05 16:09:54,678 - WARNING - Prezzo anomalo per piatto 'Posate': €0.2
+2025-08-05 16:09:54,678 - WARNING - Ristorante 'Bubble Tea' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,680 - WARNING - Prezzo anomalo per piatto 'Cofanetto 108 macarons': €245.0
+2025-08-05 16:09:54,680 - WARNING - Prezzo anomalo per piatto 'Cofanetto 72 macarons': €156.0
+2025-08-05 16:09:54,685 - INFO - Processati 400/1131 ristoranti
+2025-08-05 16:09:54,687 - WARNING - Ristorante 'Panificio Lisandri' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,687 - WARNING - Ristorante 'Mascherpa tiramisù + coffee' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,698 - WARNING - Prezzo anomalo per piatto 'Cialde': €0.4
+2025-08-05 16:09:54,698 - WARNING - Prezzo anomalo per piatto 'Coppetta': €0.4
+2025-08-05 16:09:54,698 - WARNING - Prezzo anomalo per piatto 'Piccole Palette': €0.4
+2025-08-05 16:09:54,698 - WARNING - Prezzo anomalo per piatto 'Cono': €0.4
+2025-08-05 16:09:54,699 - WARNING - Ristorante 'AltaRe' La Puglia a Morsi' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,702 - WARNING - Ristorante 'Pasticceria Tharù' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,703 - WARNING - Prezzo anomalo per piatto 'Bacchetta': €0.2
+2025-08-05 16:09:54,705 - WARNING - Prezzo anomalo per piatto 'Biscotto della fortuna 1pz-255': €0.27
+2025-08-05 16:09:54,705 - WARNING - Prezzo anomalo per piatto 'Salsa agrodolce-254': €0.27
+2025-08-05 16:09:54,705 - WARNING - Prezzo anomalo per piatto 'Salsa agropiccante-251': €0.27
+2025-08-05 16:09:54,705 - WARNING - Prezzo anomalo per piatto 'Salsa di soia-252': €0.27
+2025-08-05 16:09:54,705 - WARNING - Prezzo anomalo per piatto 'Salsa piccante-253': €0.27
+2025-08-05 16:09:54,714 - WARNING - Ristorante 'Pasticceria Mourad' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,733 - WARNING - Prezzo anomalo per piatto 'soia': €0.3
+2025-08-05 16:09:54,733 - WARNING - Prezzo anomalo per piatto 'wasabi': €0.3
+2025-08-05 16:09:54,733 - WARNING - Prezzo anomalo per piatto 'zenzero': €0.3
+2025-08-05 16:09:54,734 - WARNING - Ristorante 'Venchi Gelato e Cioccolato' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,739 - WARNING - Ristorante 'Gelateria Umberto 1934' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,744 - WARNING - Ristorante 'Bar Tabacchi' scartato: solo 1 piatti validi
+2025-08-05 16:09:54,745 - WARNING - Ristorante 'Mister piada' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,747 - WARNING - Ristorante 'Verogusto' scartato: solo 1 piatti validi
+2025-08-05 16:09:54,749 - WARNING - Ristorante 'Godo' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,750 - WARNING - Ristorante 'Panfé' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,754 - WARNING - Prezzo anomalo per piatto 'Ketchup': €0.3
+2025-08-05 16:09:54,754 - WARNING - Prezzo anomalo per piatto 'Maionese': €0.3
+2025-08-05 16:09:54,761 - WARNING - Prezzo anomalo per piatto 'Salsa di soia': €0.2
+2025-08-05 16:09:54,762 - WARNING - Prezzo anomalo per piatto 'Aceto': €0.2
+2025-08-05 16:09:54,762 - WARNING - Prezzo anomalo per piatto 'Salsa piccante': €0.2
+2025-08-05 16:09:54,762 - WARNING - Prezzo anomalo per piatto 'Salsa agro piccante': €0.2
+2025-08-05 16:09:54,773 - WARNING - Ristorante 'He Wei Ristorante' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,787 - WARNING - Prezzo anomalo per piatto 'Olio piccante': €0.3
+2025-08-05 16:09:54,787 - WARNING - Prezzo anomalo per piatto 'Salsa agrodolce': €0.3
+2025-08-05 16:09:54,787 - WARNING - Prezzo anomalo per piatto 'Salsa di soia': €0.3
+2025-08-05 16:09:54,789 - INFO - Processati 500/1131 ristoranti
+2025-08-05 16:09:54,796 - WARNING - Ristorante '1212 Bubble Tea' scartato: solo 1 piatti validi
+2025-08-05 16:09:54,798 - WARNING - Ristorante 'Susù - Tiramisù' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,798 - WARNING - Ristorante 'Pasticceria PastiChéri' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,802 - WARNING - Ristorante 'Gelateria Olimpo' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,802 - WARNING - Prezzo anomalo per piatto 'SALSA ALGERINA DIP': €0.4
+2025-08-05 16:09:54,802 - WARNING - Prezzo anomalo per piatto 'KETCHUP DIP': €0.4
+2025-08-05 16:09:54,802 - WARNING - Prezzo anomalo per piatto 'MAYONESE DIP': €0.4
+2025-08-05 16:09:54,802 - WARNING - Prezzo anomalo per piatto 'SALSA AYO DIP': €0.4
+2025-08-05 16:09:54,802 - WARNING - Prezzo anomalo per piatto 'SALSA BBQ DIP': €0.4
+2025-08-05 16:09:54,802 - WARNING - Prezzo anomalo per piatto 'SALSA BURGER DIP': €0.4
+2025-08-05 16:09:54,802 - WARNING - Prezzo anomalo per piatto 'SAMURAI DIP': €0.4
+2025-08-05 16:09:54,813 - WARNING - Prezzo anomalo per piatto 'Coni in cialda sfusi': €0.3
+2025-08-05 16:09:54,813 - WARNING - Prezzo anomalo per piatto 'Coni in cialda sfusi al cacao': €0.3
+2025-08-05 16:09:54,813 - WARNING - Ristorante 'La Prosciutteria' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,831 - WARNING - Ristorante 'La Dudu Lab' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,848 - WARNING - Ristorante 'aMORTADELLA' scartato: solo 1 piatti validi
+2025-08-05 16:09:54,855 - WARNING - Ristorante 'La Chiatta' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,862 - WARNING - Ristorante 'Pasticceria Martesana' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,872 - WARNING - Ristorante 'Martinucci Laboratory' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,888 - WARNING - Ristorante 'Pasticceria Moschella' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,889 - WARNING - Ristorante 'GeLo-Ice Cream' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,892 - WARNING - Ristorante 'MALiA' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,892 - WARNING - Ristorante 'Greco 39' scartato: solo 1 piatti validi
+2025-08-05 16:09:54,893 - INFO - Processati 600/1131 ristoranti
+2025-08-05 16:09:54,893 - WARNING - Ristorante 'Usta Pizza - Kebap' scartato: solo 1 piatti validi
+2025-08-05 16:09:54,897 - WARNING - Ristorante 'Il Panino d'Oro Cafe' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,899 - WARNING - Ristorante 'Prince Food e Games' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,899 - WARNING - Ristorante 'Poku by Bomaki' scartato: indirizzo non Milano
+2025-08-05 16:09:54,899 - WARNING - Ristorante 'Lamian per te' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,905 - WARNING - Prezzo anomalo per piatto 'Forchetta': €0.2
+2025-08-05 16:09:54,905 - WARNING - Prezzo anomalo per piatto 'Cucchiaio': €0.2
+2025-08-05 16:09:54,905 - WARNING - Prezzo anomalo per piatto 'Bacchette': €0.2
+2025-08-05 16:09:54,908 - WARNING - Prezzo anomalo per piatto 'Salsa piccante': €0.3
+2025-08-05 16:09:54,908 - WARNING - Prezzo anomalo per piatto 'Salsa di soia': €0.3
+2025-08-05 16:09:54,908 - WARNING - Prezzo anomalo per piatto 'Salsa agrodolce': €0.3
+2025-08-05 16:09:54,908 - WARNING - Prezzo anomalo per piatto 'Salsa agrodolce e piccante': €0.3
+2025-08-05 16:09:54,911 - WARNING - Ristorante 'Pizzeria Gioia' scartato: solo 1 piatti validi
+2025-08-05 16:09:54,921 - WARNING - Prezzo anomalo per piatto 'Salsa teriyaki': €0.3
+2025-08-05 16:09:54,922 - WARNING - Prezzo anomalo per piatto 'Salsa di soya extra': €0.3
+2025-08-05 16:09:54,922 - WARNING - Prezzo anomalo per piatto 'Salsa agro piccante': €0.3
+2025-08-05 16:09:54,922 - WARNING - Prezzo anomalo per piatto 'Wasabi extra': €0.3
+2025-08-05 16:09:54,922 - WARNING - Prezzo anomalo per piatto 'Salsa di soia less salt': €0.3
+2025-08-05 16:09:54,922 - WARNING - Prezzo anomalo per piatto 'Salsa di ponzu': €0.3
+2025-08-05 16:09:54,922 - WARNING - Prezzo anomalo per piatto 'Salsa piccante': €0.3
+2025-08-05 16:09:54,922 - WARNING - Prezzo anomalo per piatto 'Zenzero extra': €0.3
+2025-08-05 16:09:54,922 - WARNING - Prezzo anomalo per piatto 'Salsa di soia senza glutine': €0.3
+2025-08-05 16:09:54,927 - WARNING - Ristorante 'Panini di Loli' scartato: solo 1 piatti validi
+2025-08-05 16:09:54,928 - WARNING - Prezzo anomalo per piatto 'Salsa Teriyaki': €0.4
+2025-08-05 16:09:54,928 - WARNING - Prezzo anomalo per piatto 'Salsa piccante （sriracha）': €0.4
+2025-08-05 16:09:54,928 - WARNING - Prezzo anomalo per piatto 'Salsa agropiccante': €0.4
+2025-08-05 16:09:54,928 - WARNING - Prezzo anomalo per piatto 'Spicy maionese': €0.4
+2025-08-05 16:09:54,928 - WARNING - Prezzo anomalo per piatto 'Salsa soia Extra': €0.4
+2025-08-05 16:09:54,928 - WARNING - Prezzo anomalo per piatto 'Wasabi extra': €0.4
+2025-08-05 16:09:54,928 - WARNING - Prezzo anomalo per piatto 'Zenzero extra': €0.4
+2025-08-05 16:09:54,932 - WARNING - Prezzo anomalo per piatto 'Biscotti della fortuna': €0.4
+2025-08-05 16:09:54,942 - WARNING - Prezzo anomalo per piatto 'Champagne brut Belle Epoque': €320.0
+2025-08-05 16:09:54,947 - WARNING - Prezzo anomalo per piatto 'Maionese': €0.4
+2025-08-05 16:09:54,947 - WARNING - Prezzo anomalo per piatto 'Ketchup': €0.4
+2025-08-05 16:09:54,947 - WARNING - Prezzo anomalo per piatto 'Bacchette': €0.3
+2025-08-05 16:09:54,947 - WARNING - Prezzo anomalo per piatto 'Posate di legno': €0.3
+2025-08-05 16:09:54,960 - WARNING - Ristorante 'Santo Taco' scartato: solo 1 piatti validi
+2025-08-05 16:09:54,972 - WARNING - Ristorante 'Pasticceria Clivati' scartato: solo 0 piatti validi
+2025-08-05 16:09:54,981 - WARNING - Prezzo anomalo per piatto 'Maionese bustina': €0.15
+2025-08-05 16:09:54,981 - WARNING - Prezzo anomalo per piatto 'Ketchup bustina': €0.15
+2025-08-05 16:09:54,983 - WARNING - Prezzo anomalo per piatto 'Curry Mango': €0.45
+2025-08-05 16:09:54,983 - WARNING - Prezzo anomalo per piatto 'Barbecue': €0.45
+2025-08-05 16:09:54,992 - WARNING - Prezzo anomalo per piatto 'Sale, pepe, stecchini': €0.25
+2025-08-05 16:09:54,997 - WARNING - Ristorante 'Spacca' scartato: solo 0 piatti validi
+2025-08-05 16:09:55,003 - WARNING - Ristorante 'Lei Poke Sushi' scartato: solo 0 piatti validi
+2025-08-05 16:09:55,011 - WARNING - Prezzo anomalo per piatto 'Salsa di soia': €0.2
+2025-08-05 16:09:55,011 - WARNING - Prezzo anomalo per piatto 'Salsa mango': €0.2
+2025-08-05 16:09:55,011 - WARNING - Prezzo anomalo per piatto 'Salsa teriyaki': €0.2
+2025-08-05 16:09:55,011 - WARNING - Prezzo anomalo per piatto 'Salsa agropiccante': €0.2
+2025-08-05 16:09:55,011 - WARNING - Prezzo anomalo per piatto 'Maionese': €0.2
+2025-08-05 16:09:55,011 - WARNING - Prezzo anomalo per piatto 'Salsa piccante': €0.2
+2025-08-05 16:09:55,011 - WARNING - Prezzo anomalo per piatto 'Salsa ponzu': €0.2
+2025-08-05 16:09:55,011 - WARNING - Prezzo anomalo per piatto 'Spicy mayo': €0.2
+2025-08-05 16:09:55,014 - WARNING - Ristorante 'McDonald's' scartato: solo 0 piatti validi
+2025-08-05 16:09:55,015 - WARNING - Ristorante 'La colazione del San Filippo' scartato: solo 0 piatti validi
+2025-08-05 16:09:55,016 - WARNING - Ristorante 'Pasticceria San Gregorio - Artigianale da 70 anni' scartato: solo 0 piatti validi
+2025-08-05 16:09:55,016 - WARNING - Ristorante 'Bar Leopoli' scartato: solo 1 piatti validi
+2025-08-05 16:09:55,016 - WARNING - Ristorante 'Caffè Napoli' scartato: solo 0 piatti validi
+2025-08-05 16:09:55,022 - WARNING - Ristorante 'Pasticceria Martesana' scartato: solo 0 piatti validi
+2025-08-05 16:09:55,027 - WARNING - Ristorante 'Bagel House' scartato: solo 0 piatti validi
+2025-08-05 16:09:55,032 - WARNING - Ristorante 'Donut Land' scartato: solo 0 piatti validi
+2025-08-05 16:09:55,039 - WARNING - Ristorante 'McDonald's' scartato: solo 0 piatti validi
+2025-08-05 16:09:55,039 - WARNING - Ristorante 'Caffè e Brioches' scartato: solo 0 piatti validi
+2025-08-05 16:09:55,039 - WARNING - Ristorante 'Caffè Centrale' scartato: solo 1 piatti validi
+2025-08-05 16:09:55,046 - WARNING - Prezzo anomalo per piatto 'Cono': €0.25
+2025-08-05 16:09:55,046 - WARNING - Prezzo anomalo per piatto 'Coppetta e cucchiaino': €0.25
+2025-08-05 16:09:55,046 - WARNING - Ristorante 'Cappu-cin' scartato: solo 0 piatti validi
+2025-08-05 16:09:55,053 - WARNING - Prezzo anomalo per piatto 'Coppetta 1 pezzo': €0.3
+2025-08-05 16:09:55,060 - WARNING - Prezzo anomalo per piatto 'Salsa di soia': €0.3
+2025-08-05 16:09:55,060 - WARNING - Prezzo anomalo per piatto 'Salsa Piccante': €0.3
+2025-08-05 16:09:55,060 - WARNING - Prezzo anomalo per piatto 'Salga Agrodolce': €0.3
+2025-08-05 16:09:55,095 - WARNING - Ristorante 'Ristorante pizzeria Morganti 2' scartato: solo 0 piatti validi
+2025-08-05 16:09:55,095 - WARNING - Ristorante 'Maki Poke' scartato: solo 0 piatti validi
+2025-08-05 16:09:55,095 - WARNING - Ristorante 'Il Gelatiere' scartato: solo 0 piatti validi
+2025-08-05 16:09:55,100 - WARNING - Prezzo anomalo per piatto 'Salsa agrodolce': €0.2
+2025-08-05 16:09:55,100 - WARNING - Prezzo anomalo per piatto 'Salsa di soia': €0.2
+2025-08-05 16:09:55,101 - WARNING - Prezzo anomalo per piatto 'Zenzero': €0.2
+2025-08-05 16:09:55,101 - WARNING - Prezzo anomalo per piatto 'Wasabi': €0.2
+2025-08-05 16:09:55,101 - WARNING - Prezzo anomalo per piatto 'Salsa piccante': €0.2
+2025-08-05 16:09:55,101 - WARNING - Prezzo anomalo per piatto 'Salsa agropiccante': €0.2
+2025-08-05 16:09:55,101 - WARNING - Prezzo anomalo per piatto 'Salsa teriyaki': €0.2
+2025-08-05 16:09:55,112 - WARNING - Ristorante 'Zio Michele Pasticceria rosticceria Siciliana' scartato: solo 1 piatti validi
+2025-08-05 16:09:55,114 - WARNING - Prezzo anomalo per piatto 'Bacchette': €0.1
+2025-08-05 16:09:55,114 - WARNING - Prezzo anomalo per piatto 'Cucchiaio in legno': €0.1
+2025-08-05 16:09:55,114 - WARNING - Prezzo anomalo per piatto 'Forchetta in legno': €0.1
+2025-08-05 16:09:55,122 - WARNING - Prezzo anomalo per piatto 'Biscotto della fortuna': €0.3
+2025-08-05 16:09:55,132 - WARNING - Prezzo anomalo per piatto 'Salsa agrodolce': €0.2
+2025-08-05 16:09:55,133 - WARNING - Prezzo anomalo per piatto 'Salsa di soia': €0.2
+2025-08-05 16:09:55,133 - WARNING - Prezzo anomalo per piatto 'Zenzero': €0.2
+2025-08-05 16:09:55,133 - WARNING - Prezzo anomalo per piatto 'Wasabi': €0.2
+2025-08-05 16:09:55,133 - WARNING - Prezzo anomalo per piatto 'Salsa piccante': €0.2
+2025-08-05 16:09:55,133 - WARNING - Prezzo anomalo per piatto 'Salsa agropiccante': €0.2
+2025-08-05 16:09:55,133 - WARNING - Prezzo anomalo per piatto 'Salsa teriyaki': €0.2
+2025-08-05 16:09:55,136 - WARNING - Prezzo anomalo per piatto 'Bacchette e Tovagliolo': €0.15
+2025-08-05 16:09:55,136 - WARNING - Prezzo anomalo per piatto 'Forchetta e Tovagliolo': €0.15
+2025-08-05 16:09:55,136 - WARNING - Prezzo anomalo per piatto 'Salsa di soia in bustina': €0.15
+2025-08-05 16:09:55,162 - INFO - Processati 800/1131 ristoranti
+2025-08-05 16:09:55,167 - WARNING - Prezzo anomalo per piatto 'Extra - Ketchup': €0.35
+2025-08-05 16:09:55,167 - WARNING - Prezzo anomalo per piatto 'Extra - Maionese': €0.35
+2025-08-05 16:09:55,167 - WARNING - Prezzo anomalo per piatto 'Extra - Salsa BBQ': €0.35
+2025-08-05 16:09:55,167 - WARNING - Prezzo anomalo per piatto 'Extra - Salsa alioli': €0.35
+2025-08-05 16:09:55,167 - WARNING - Prezzo anomalo per piatto 'Extra - Salsa tonnata': €0.35
+2025-08-05 16:09:55,167 - WARNING - Prezzo anomalo per piatto 'Extra - Senape e miele': €0.35
+2025-08-05 16:09:55,167 - WARNING - Prezzo anomalo per piatto 'Extra - Salsa brava': €0.35
+2025-08-05 16:09:55,172 - WARNING - Prezzo anomalo per piatto 'Cono wafer vuoto': €0.2
+2025-08-05 16:09:55,172 - WARNING - Ristorante 'Gelateria Marabù Villa San Giovanni' scartato: solo 0 piatti validi
+2025-08-05 16:09:55,179 - WARNING - Ristorante 'Fradiavolo' scartato: solo 0 piatti validi
+2025-08-05 16:09:55,192 - WARNING - Ristorante 'Noyi Chef Sushi' scartato: solo 1 piatti validi
+2025-08-05 16:09:55,193 - WARNING - Ristorante 'O'Shop Pizzium' scartato: solo 0 piatti validi
+2025-08-05 16:09:55,205 - WARNING - Ristorante 'Caffè Napoli' scartato: solo 0 piatti validi
+2025-08-05 16:09:55,236 - WARNING - Prezzo anomalo per piatto '514. Salsa teriyaki': €0.3
+2025-08-05 16:09:55,236 - WARNING - Prezzo anomalo per piatto '514. Salsa agropiccante': €0.3
+2025-08-05 16:09:55,236 - WARNING - Prezzo anomalo per piatto '513. Wasabi': €0.2
+2025-08-05 16:09:55,236 - WARNING - Prezzo anomalo per piatto '513. Zenzero': €0.2
+2025-08-05 16:09:55,236 - WARNING - Prezzo anomalo per piatto '513. Soia': €0.2
+2025-08-05 16:09:55,239 - WARNING - Prezzo anomalo per piatto 'Bustina maionese': €0.2
+2025-08-05 16:09:55,239 - WARNING - Prezzo anomalo per piatto 'Bustina ketchup': €0.2
+2025-08-05 16:09:55,244 - WARNING - Ristorante 'KAO YAN' scartato: solo 0 piatti validi
+2025-08-05 16:09:55,267 - WARNING - Prezzo anomalo per piatto 'Bacchette monouso': €0.1
+2025-08-05 16:09:55,267 - WARNING - Prezzo anomalo per piatto 'Biscotto della fortuna': €0.1
+2025-08-05 16:09:55,272 - WARNING - Prezzo anomalo per piatto 'Maionese Heinz': €0.3
+2025-08-05 16:09:55,272 - WARNING - Prezzo anomalo per piatto 'Ketchup Heinz': €0.3
+2025-08-05 16:09:55,303 - WARNING - Ristorante 'O'Shop Pizzium' scartato: solo 0 piatti validi
+2025-08-05 16:09:55,303 - WARNING - Ristorante 'Sleppa' scartato: solo 0 piatti validi
+2025-08-05 16:09:55,305 - WARNING - Prezzo anomalo per piatto 'Wasabi e Zenzero': €0.24
+2025-08-05 16:09:55,305 - WARNING - Prezzo anomalo per piatto 'Extra Salse': €0.24
+2025-08-05 16:09:55,305 - WARNING - Prezzo anomalo per piatto 'Extra Posate': €0.24
+2025-08-05 16:09:55,305 - WARNING - Prezzo anomalo per piatto 'Extra Salsa di soia': €0.24
+2025-08-05 16:09:55,313 - WARNING - Prezzo anomalo per piatto 'Salsa di soia': €0.3
+2025-08-05 16:09:55,313 - WARNING - Prezzo anomalo per piatto 'Salsa agrodolce': €0.3
+2025-08-05 16:09:55,313 - WARNING - Prezzo anomalo per piatto 'Salsa agropiccante': €0.3
+2025-08-05 16:09:55,317 - INFO - Processati 900/1131 ristoranti
+2025-08-05 16:09:55,319 - WARNING - Prezzo anomalo per piatto 'Maionese': €0.49
+2025-08-05 16:09:55,319 - WARNING - Prezzo anomalo per piatto 'Ketchup': €0.49
+2025-08-05 16:09:55,330 - WARNING - Ristorante 'McDonald's' scartato: solo 0 piatti validi
+2025-08-05 16:09:55,331 - WARNING - Ristorante 'La Dolce Vita - L'Arte del Dolce' scartato: solo 0 piatti validi
+2025-08-05 16:09:55,332 - WARNING - Ristorante 'Caffè Napoli' scartato: solo 0 piatti validi
+2025-08-05 16:09:55,332 - WARNING - Ristorante 'Marlà Pasticceria' scartato: solo 0 piatti validi
+2025-08-05 16:09:55,342 - WARNING - Ristorante 'Venchi Gelato e Cioccolato' scartato: solo 0 piatti validi
+2025-08-05 16:09:55,346 - WARNING - Prezzo anomalo per piatto 'Salsa piccante Hot Devil': €0.3
+2025-08-05 16:09:55,346 - WARNING - Prezzo anomalo per piatto 'Ketchup': €0.3
+2025-08-05 16:09:55,346 - WARNING - Prezzo anomalo per piatto 'Maionese': €0.3
+2025-08-05 16:09:55,346 - WARNING - Prezzo anomalo per piatto 'Barbecue': €0.3
+2025-08-05 16:09:55,346 - WARNING - Prezzo anomalo per piatto 'Agrodolce': €0.3
+2025-08-05 16:09:55,346 - WARNING - Prezzo anomalo per piatto 'Senape': €0.3
+2025-08-05 16:09:55,347 - WARNING - Ristorante 'McDonald's' scartato: solo 0 piatti validi
+2025-08-05 16:09:55,364 - WARNING - Ristorante 'Pasticceria Caravaggio' scartato: solo 0 piatti validi
+2025-08-05 16:09:55,367 - WARNING - Prezzo anomalo per piatto 'Salsa maionese 10 g': €0.2
+2025-08-05 16:09:55,368 - WARNING - Prezzo anomalo per piatto 'Salsa ketchup 10 g': €0.2
+2025-08-05 16:09:55,390 - WARNING - Ristorante 'Poke 4 You' scartato: solo 1 piatti validi
+2025-08-05 16:09:55,397 - WARNING - Prezzo anomalo per piatto 'Cono vuoto': €0.4
+2025-08-05 16:09:55,397 - WARNING - Ristorante 'Latteria Medini' scartato: solo 0 piatti validi
+2025-08-05 16:09:55,397 - WARNING - Ristorante 'Osteria Rap del Gargano' scartato: solo 1 piatti validi
+2025-08-05 16:09:55,432 - WARNING - Ristorante 'La Prosciutteria' scartato: solo 0 piatti validi
+2025-08-05 16:09:55,433 - WARNING - Prezzo anomalo per piatto 'Maionese Gaia': €0.25
+2025-08-05 16:09:55,433 - WARNING - Prezzo anomalo per piatto 'Ketchup Gaia': €0.25
+2025-08-05 16:09:55,435 - INFO - Processati 1000/1131 ristoranti
+2025-08-05 16:09:55,474 - WARNING - Ristorante 'Pizza Guru' scartato: solo 0 piatti validi
+2025-08-05 16:09:55,493 - WARNING - Prezzo anomalo per piatto 'Salsa maionese': €0.3
+2025-08-05 16:09:55,493 - WARNING - Prezzo anomalo per piatto 'Salsa sriracha': €0.3
+2025-08-05 16:09:55,493 - WARNING - Prezzo anomalo per piatto 'Salsa di soia': €0.3
+2025-08-05 16:09:55,493 - WARNING - Prezzo anomalo per piatto 'Salsa piccante': €0.3
+2025-08-05 16:09:55,493 - WARNING - Prezzo anomalo per piatto 'Salsa agropiccante': €0.3
+2025-08-05 16:09:55,493 - WARNING - Prezzo anomalo per piatto 'Salsa agrodolce': €0.3
+2025-08-05 16:09:55,495 - WARNING - Ristorante 'Annarè - Milano' scartato: solo 0 piatti validi
+2025-08-05 16:09:55,496 - WARNING - Prezzo anomalo per piatto 'Bacchette': €0.1
+2025-08-05 16:09:55,497 - WARNING - Prezzo anomalo per piatto 'Forchetta': €0.1
+2025-08-05 16:09:55,499 - WARNING - Ristorante 'Pizzeria Forza Kayla' scartato: solo 1 piatti validi
+2025-08-05 16:09:55,508 - WARNING - Prezzo anomalo per piatto 'Premium box': €206.0
+2025-08-05 16:09:55,518 - WARNING - Prezzo anomalo per piatto 'Bacchetta': €0.2
+2025-08-05 16:09:55,538 - WARNING - Prezzo anomalo per piatto 'Ketchup': €0.3
+2025-08-05 16:09:55,538 - WARNING - Prezzo anomalo per piatto 'Maionese': €0.3
+2025-08-05 16:09:55,538 - WARNING - Prezzo anomalo per piatto 'Salsa 1000 island': €0.3
+2025-08-05 16:09:55,538 - WARNING - Prezzo anomalo per piatto 'Salsa Ranch': €0.3
+2025-08-05 16:09:55,538 - WARNING - Prezzo anomalo per piatto 'Honey Mustard': €0.3
+2025-08-05 16:09:55,538 - WARNING - Prezzo anomalo per piatto 'Salsa Barbecue': €0.3
+2025-08-05 16:09:55,561 - WARNING - Prezzo anomalo per piatto 'bacchette di legno': €0.2
+2025-08-05 16:09:55,562 - WARNING - Ristorante 'Spago - Arte e Cucina' scartato: solo 1 piatti validi
+2025-08-05 16:09:55,574 - WARNING - Ristorante 'MALiA' scartato: solo 0 piatti validi
+2025-08-05 16:09:55,575 - WARNING - Ristorante 'Tette delle Monache di Nonna Lucia' scartato: solo 0 piatti validi
+2025-08-05 16:09:55,575 - WARNING - Prezzo anomalo per piatto 'POSATE': €0.4
+2025-08-05 16:09:55,576 - WARNING - Prezzo anomalo per piatto 'Forchetta 1 pezzo': €0.2
+2025-08-05 16:09:55,576 - WARNING - Prezzo anomalo per piatto 'Bacchetta 1 paio': €0.1
+2025-08-05 16:09:55,587 - WARNING - Prezzo anomalo per piatto 'Cono - 1 pezzo': €0.4
+2025-08-05 16:09:55,587 - WARNING - Prezzo anomalo per piatto 'Coppetta e Palettina - 1 pezzo': €0.3
+2025-08-05 16:09:55,600 - WARNING - Prezzo anomalo per piatto 'Bacchette': €0.1
+2025-08-05 16:09:55,600 - WARNING - Prezzo anomalo per piatto 'Forchetta': €0.1
+2025-08-05 16:09:55,606 - INFO - Processati 1100/1131 ristoranti
+2025-08-05 16:09:55,612 - WARNING - Ristorante 'Ono Sushi Experience' scartato: indirizzo non Milano
+2025-08-05 16:09:55,637 - WARNING - Prezzo anomalo per piatto 'EXTRA - KIT BACCHET EXTRA': €0.2
+2025-08-05 16:09:55,642 - WARNING - Prezzo anomalo per piatto 'Cono': €0.3
+2025-08-05 16:09:55,643 - WARNING - Ristorante 'Vetusta Insigna' scartato: solo 1 piatti validi
+2025-08-05 16:09:55,645 - WARNING - Prezzo anomalo per piatto 'Coppa vuota': €0.2
+2025-08-05 16:09:55,653 - WARNING - Prezzo anomalo per piatto 'Forchetta': €0.2
+2025-08-05 16:09:55,653 - INFO - Inizio deduplicazione piatti
+2025-08-05 16:09:55,671 - INFO - Rimossi 9082 duplicati su 49743 piatti
+2025-08-05 16:09:55,672 - INFO - Salvataggio files risultanti
+2025-08-05 16:09:56,540 - INFO - ETL completato: 1009 ristoranti, 40661 piatti processati

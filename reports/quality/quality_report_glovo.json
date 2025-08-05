@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-08-05T16:09:56.489714",
+  "versione_etl": "2.0",
+  "configurazione": {
+    "prezzo_min": 0.5,
+    "prezzo_max": 150.0,
+    "min_piatti_ristorante": 2,
+    "min_lunghezza_nome_piatto": 3,
+    "max_lunghezza_nome_piatto": 100,
+    "versione_etl": "2.0"
+  },
+  "statistiche": {
+    "ristoranti_processati": 1131,
+    "ristoranti_scartati": 122,
+    "ristoranti_duplicati": 0,
+    "piatti_processati": 71461,
+    "piatti_scartati": 21698,
+    "piatti_prezzo_anomalo": 308,
+    "indirizzi_non_milano": 4,
+    "motivi_scarto": {
+      "ingredienti_non_validi": 21598,
+      "troppi_pochi_piatti": 118,
+      "indirizzo_non_milano": 4,
+      "piatto_nome_troppo_corto": 46,
+      "piatto_nome_non_valido_(solo_numeri/simboli)": 54
+    },
+    "piatti_duplicati_rimossi": 9082
+  },
+  "distribuzione_tipi_piatto": {
+    "pizza": 9847,
+    "piadina": 4279,
+    "hamburger": 4150,
+    "kebab": 1337,
+    "carne": 2545,
+    "bibite": 2072,
+    "altro": 5520,
+    "insalata": 1269,
+    "pesce": 1799,
+    "pasta": 1615,
+    "sushi": 9207,
+    "gelato": 2182,
+    "dolce": 963,
+    "poke": 2978
+  },
+  "riepilogo": {
+    "ristoranti_validi": 1009,
+    "piatti_validi": 40661,
+    "tasso_successo_ristoranti": 89.2130857648099,
+    "tasso_successo_piatti": 56.89956759631127
+  }
+}

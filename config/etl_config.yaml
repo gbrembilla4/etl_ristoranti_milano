@@ -1,0 +1,12 @@
+# etl_config
+data_quality:
+  min_price: 0.50
+  max_price: 150.00
+  min_dishes_per_restaurant: 2
+  min_dish_name_length: 3
+
+file_paths:
+  raw_data: "data/raw/ristoranti_glovo_milano.json"
+  clean_restaurants: "data/processed/ristoranti_clean.json"
+  clean_dishes: "data/processed/piatti_clean.json"
+  dishes: "data/processed/piatti_clean_calorie_allergeni.json"
