@@ -9,4 +9,4 @@ file_paths:
   raw_data: "data/raw/ristoranti_glovo_milano.json"
   clean_restaurants: "data/processed/ristoranti_clean.json"
   clean_dishes: "data/processed/piatti_clean.json"
-  dishes: "data/processed/piatti_clean_calorie_allergeni.json"
+  clean_dishes_llama: "data/processed/piatti_con_stime_allergeni.json"

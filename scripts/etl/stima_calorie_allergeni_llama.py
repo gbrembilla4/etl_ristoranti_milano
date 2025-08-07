@@ -60,18 +60,18 @@ ALLERGENI_DIZ = {
         "farina", "pane", "pizza", "pasta", "piadina", "impasto", "frumento", "orzo", "avena", "segale",
         # Tipi specifici
         "hamburger", "panino", "focaccia", "bruschetta", "crostino", "toast", "sandwich",
-        "gnocchi", "lasagne", "tortellini", "ravioli", "tagliatelle", "spaghetti",
+        "gnocchi", "lasagne", "tortellini", "ravioli", "tagliatelle", "spaghetti", "cotoletta",
         # Impasti e basi
         "base pizza", "pasta sfoglia", "pasta frolla", "cracker"
     ],
-    "latte": ["mozzarella", "formaggio", "burro", "latte", "parmigiano", "gorgonzola", "ricotta", "mascarpone", "stracchino", "fontina", "pecorino"],
-    "uova": ["uovo", "uova", "frittata", "carbonara", "maionese"],
+    "latte": ["mozzarella", "formaggio", "burro", "latte", "parmigiano", "gorgonzola", "ricotta", "mascarpone", "stracchino", "fontina", "pecorino", "yogurt"],
+    "uova": ["uovo", "uova", "frittata", "carbonara", "maionese", "cotoletta"],
     "pesce": ["tonno", "salmone", "merluzzo", "acciughe", "pesce", "baccalà", "branzino", "orata", "spigola"],
     "soia": ["soia", "salsa di soia", "tofu", "edamame"],
     "frutta a guscio": ["noci", "nocciole", "mandorle", "anacardi", "pistacchi", "pinoli", "noci pecan"],
     "arachidi": ["arachidi", "burro di arachidi"],
     "sedano": ["sedano", "sedano rapa"],
-    "senape": ["senape", "mostarda"],
+    "senape": ["senape", "mostarda", "salse"],
     "sesamo": ["sesamo", "semi di sesamo", "tahini", "hummus"],
     "molluschi": ["polpo", "calamaro", "cozze", "vongole", "seppie", "totano"],
     "crostacei": ["gambero", "aragosta", "scampo", "granchio", "astice", "mazzancolla"]
@@ -340,44 +340,41 @@ def stima_calorie_batch(piatti_unici):
     return risultati_stima
 
 # === Estrazione allergeni con Fuzzy Matching ===
-def estrai_allergeni(ingredienti, tipo_piatto):
+def estrai_allergeni(ingredienti, tipo_piatto, nome_piatto=""):
     allergeni_trovati = set()
-    ingredienti_lower = [ing.lower().strip() for ing in ingredienti]
+    
+    ingredienti_lower = [ing.lower().strip() for ing in ingredienti if ing]
+    nome_lower = nome_piatto.lower().strip() if nome_piatto else ""
     
     # Regole automatiche per tipo piatto
-    if tipo_piatto in ["pizza", "pasta", "hamburger", "kebab", "piadina"]:
+    if tipo_piatto in ["pizza", "pasta", "hamburger", "kebab", "kebap" "piadina"]:
         allergeni_trovati.add("glutine")
     
-    # Ricerca fuzzy negli ingredienti
-    for ingrediente in ingredienti_lower:
-        if not ingrediente:  # Skip ingredienti vuoti
-            continue
-            
+    # Unifica ingredienti e nome per controllo allergeni
+    testi_da_analizzare = ingredienti_lower + [nome_lower]
+    
+    for testo in testi_da_analizzare:
         for allergene, keywords in ALLERGENI_DIZ.items():
             if allergene in allergeni_trovati:
                 continue  # Già trovato, skip
-                
+            
             for keyword in keywords:
-                # 1. Exact match (più veloce)
-                if keyword in ingrediente:
+                # Match esatto
+                if keyword in testo:
                     allergeni_trovati.add(allergene)
                     break
                 
-                # 2. Fuzzy matching per variazioni
-                # partial_ratio per match parziali (es. "parmigiano reggiano" vs "parmigiano")
-                partial_score = fuzz.partial_ratio(keyword, ingrediente)
-                # ratio per match completi con piccole variazioni (es. "mozzarela" vs "mozzarella")
-                full_score = fuzz.ratio(keyword, ingrediente)
-                
-                # Soglie diverse per diversi tipi di match
+                # Match fuzzy
+                partial_score = fuzz.partial_ratio(keyword, testo)
+                full_score = fuzz.ratio(keyword, testo)
                 if partial_score >= 90 or full_score >= 85:
                     allergeni_trovati.add(allergene)
-                    logger.debug(f"Fuzzy match: '{keyword}' -> '{ingrediente}' (partial:{partial_score}, full:{full_score}) -> {allergene}")
+                    logger.debug(f"Fuzzy match: '{keyword}' -> '{testo}' (partial:{partial_score}, full:{full_score}) -> {allergene}")
                     break
-            
+
             if allergene in allergeni_trovati:
-                break  # Esci dal loop keywords se allergene già trovato
-    
+                break  # Interrompi ciclo delle keyword se trovato
+
     return sorted(list(allergeni_trovati))
 
 # === Funzione per testare matching allergeni (per debug) ===
@@ -421,9 +418,10 @@ def main():
         logger.error(f"Errore caricamento file: {e}")
         exit(1)
     
-    # === Filtra tipo_piatto 'altro' ===
-    piatti_filtered_altro = [p for p in raw_data if p.get('tipo_piatto') != 'altro']
-    logger.info(f"Piatti dopo filtro 'altro': {len(piatti_filtered_altro)}")
+     # === Filtra tipo_piatto 'altro' e 'bibite' ===
+    piatti_filtered_altro = [p for p in raw_data if p.get('tipo_piatto') not in ['altro', 'bibite']]
+    logger.info(f"Piatti dopo filtro 'altro' e 'bibite': {len(piatti_filtered_altro)} (rimossi {len(raw_data) - len(piatti_filtered_altro)})")
+    
     
     # === Filtra menu/box/offerte ===
     piatti_filtered_menu = []
@@ -524,8 +522,9 @@ def main():
             p['calorie_stimate'] = None
             p['healthy'] = None
     
-        # Estrai allergeni (ora con tipo_piatto)
-        allergeni = estrai_allergeni(p['ingredienti'], p['tipo_piatto'])
+        # Estrai allergeni con ingredienti, tipo_piatto e nome
+        allergeni = estrai_allergeni(p.get("ingredienti", []), p.get("tipo_piatto", ""), p.get("nome", ""))
+
         p['allergeni'] = allergeni
     
     # Non aggiungiamo i piatti esclusi al risultato finale
