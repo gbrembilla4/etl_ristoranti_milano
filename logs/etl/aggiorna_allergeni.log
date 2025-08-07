@@ -1,0 +1,41 @@
+2025-08-07 17:06:27,616 - INFO - === INIZIO AGGIORNAMENTO ALLERGENI ===
+2025-08-07 17:09:57,786 - INFO - === INIZIO AGGIORNAMENTO ALLERGENI ===
+2025-08-07 17:09:57,856 - INFO - Caricati 25117 piatti da: /Users/gloria.brembilla/Documents/AIDA/Modulo1/02 - BI/etl_ristoranti_milano/scripts/etl/../../data/processed/piatti_con_stime_allergeni_no_bibite.json
+2025-08-07 17:10:06,341 - INFO - Salvati 25117 piatti con allergeni aggiornati in: /Users/gloria.brembilla/Documents/AIDA/Modulo1/02 - BI/etl_ristoranti_milano/scripts/etl/../../data/processed/piatti_con_allergeni_aggiornati.json
+2025-08-07 17:10:06,341 - INFO - === FINE AGGIORNAMENTO ALLERGENI ===
+2025-08-07 17:14:03,185 - INFO - === INIZIO AGGIORNAMENTO ALLERGENI ===
+2025-08-07 17:14:03,255 - INFO - Caricati 25117 piatti da: /Users/gloria.brembilla/Documents/AIDA/Modulo1/02 - BI/etl_ristoranti_milano/scripts/etl/../../data/processed/piatti_con_stime_allergeni_no_bibite.json
+2025-08-07 17:14:11,745 - INFO - Salvati 25117 piatti con allergeni aggiornati in: /Users/gloria.brembilla/Documents/AIDA/Modulo1/02 - BI/etl_ristoranti_milano/scripts/etl/../../data/processed/piatti_con_allergeni_aggiornati.json
+2025-08-07 17:14:11,746 - INFO - === FINE AGGIORNAMENTO ALLERGENI ===
+2025-08-07 17:16:34,859 - INFO - === INIZIO AGGIORNAMENTO ALLERGENI ===
+2025-08-07 17:16:34,926 - INFO - Caricati 25117 piatti da: /Users/gloria.brembilla/Documents/AIDA/Modulo1/02 - BI/etl_ristoranti_milano/scripts/etl/../../data/processed/piatti_con_stime_allergeni_no_bibite.json
+2025-08-07 17:16:43,870 - INFO - Salvati 25117 piatti con allergeni aggiornati in: /Users/gloria.brembilla/Documents/AIDA/Modulo1/02 - BI/etl_ristoranti_milano/scripts/etl/../../data/processed/piatti_con_allergeni_aggiornati.json
+2025-08-07 17:16:43,870 - INFO - === FINE AGGIORNAMENTO ALLERGENI ===
+2025-08-07 17:17:40,549 - INFO - === INIZIO AGGIORNAMENTO ALLERGENI ===
+2025-08-07 17:17:40,622 - INFO - Caricati 25117 piatti da: /Users/gloria.brembilla/Documents/AIDA/Modulo1/02 - BI/etl_ristoranti_milano/scripts/etl/../../data/processed/piatti_con_stime_allergeni_no_bibite.json
+2025-08-07 17:17:49,655 - INFO - Salvati 25117 piatti con allergeni aggiornati in: /Users/gloria.brembilla/Documents/AIDA/Modulo1/02 - BI/etl_ristoranti_milano/scripts/etl/../../data/processed/piatti_con_allergeni_aggiornati.json
+2025-08-07 17:17:49,655 - INFO - === FINE AGGIORNAMENTO ALLERGENI ===
+2025-08-07 17:23:26,117 - INFO - === INIZIO AGGIORNAMENTO ALLERGENI ===
+2025-08-07 17:23:26,183 - INFO - Caricati 25117 piatti da: /Users/gloria.brembilla/Documents/AIDA/Modulo1/02 - BI/etl_ristoranti_milano/scripts/etl/../../data/processed/piatti_con_stime_allergeni_no_bibite.json
+2025-08-07 17:23:35,066 - INFO - Salvati 25117 piatti con allergeni aggiornati in: /Users/gloria.brembilla/Documents/AIDA/Modulo1/02 - BI/etl_ristoranti_milano/scripts/etl/../../data/processed/piatti_con_allergeni_aggiornati.json
+2025-08-07 17:23:35,067 - INFO - === FINE AGGIORNAMENTO ALLERGENI ===
+2025-08-07 17:25:25,350 - INFO - === INIZIO AGGIORNAMENTO ALLERGENI ===
+2025-08-07 17:25:25,421 - INFO - Caricati 25117 piatti da: /Users/gloria.brembilla/Documents/AIDA/Modulo1/02 - BI/etl_ristoranti_milano/scripts/etl/../../data/processed/piatti_con_stime_allergeni_no_bibite.json
+2025-08-07 17:25:34,641 - INFO - Salvati 25117 piatti con allergeni aggiornati in: /Users/gloria.brembilla/Documents/AIDA/Modulo1/02 - BI/etl_ristoranti_milano/scripts/etl/../../data/processed/piatti_con_allergeni_aggiornati.json
+2025-08-07 17:25:34,643 - INFO - === FINE AGGIORNAMENTO ALLERGENI ===
+2025-08-07 17:27:46,218 - INFO - === INIZIO AGGIORNAMENTO ALLERGENI ===
+2025-08-07 17:27:46,284 - INFO - Caricati 25117 piatti da: /Users/gloria.brembilla/Documents/AIDA/Modulo1/02 - BI/etl_ristoranti_milano/scripts/etl/../../data/processed/piatti_con_stime_allergeni_no_bibite.json
+2025-08-07 17:27:55,478 - INFO - Salvati 25117 piatti con allergeni aggiornati in: /Users/gloria.brembilla/Documents/AIDA/Modulo1/02 - BI/etl_ristoranti_milano/scripts/etl/../../data/processed/piatti_con_allergeni_aggiornati.json
+2025-08-07 17:27:55,478 - INFO - === FINE AGGIORNAMENTO ALLERGENI ===
+2025-08-07 17:29:01,794 - INFO - === INIZIO AGGIORNAMENTO ALLERGENI ===
+2025-08-07 17:29:01,866 - INFO - Caricati 25117 piatti da: /Users/gloria.brembilla/Documents/AIDA/Modulo1/02 - BI/etl_ristoranti_milano/scripts/etl/../../data/processed/piatti_con_stime_allergeni_no_bibite.json
+2025-08-07 17:29:11,009 - INFO - Salvati 25117 piatti con allergeni aggiornati in: /Users/gloria.brembilla/Documents/AIDA/Modulo1/02 - BI/etl_ristoranti_milano/scripts/etl/../../data/processed/piatti_con_allergeni_aggiornati.json
+2025-08-07 17:29:11,010 - INFO - === FINE AGGIORNAMENTO ALLERGENI ===
+2025-08-07 17:30:47,830 - INFO - === INIZIO AGGIORNAMENTO ALLERGENI ===
+2025-08-07 17:30:47,900 - INFO - Caricati 25117 piatti da: /Users/gloria.brembilla/Documents/AIDA/Modulo1/02 - BI/etl_ristoranti_milano/scripts/etl/../../data/processed/piatti_con_stime_allergeni_no_bibite.json
+2025-08-07 17:30:57,010 - INFO - Salvati 25117 piatti con allergeni aggiornati in: /Users/gloria.brembilla/Documents/AIDA/Modulo1/02 - BI/etl_ristoranti_milano/scripts/etl/../../data/processed/piatti_con_allergeni_aggiornati.json
+2025-08-07 17:30:57,013 - INFO - === FINE AGGIORNAMENTO ALLERGENI ===
+2025-08-07 17:55:10,302 - INFO - === INIZIO AGGIORNAMENTO ALLERGENI ===
+2025-08-07 17:55:10,380 - INFO - Caricati 25117 piatti da: /Users/gloria.brembilla/Documents/AIDA/Modulo1/02 - BI/etl_ristoranti_milano/scripts/etl/../../data/processed/piatti_con_stime_allergeni_no_bibite.json
+2025-08-07 17:55:19,557 - INFO - Salvati 25117 piatti con allergeni aggiornati in: /Users/gloria.brembilla/Documents/AIDA/Modulo1/02 - BI/etl_ristoranti_milano/scripts/etl/../../data/processed/piatti_con_allergeni_aggiornati.json
+2025-08-07 17:55:19,560 - INFO - === FINE AGGIORNAMENTO ALLERGENI ===

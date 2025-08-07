@@ -10,3 +10,5 @@ file_paths:
   clean_restaurants: "data/processed/ristoranti_clean.json"
   clean_dishes: "data/processed/piatti_clean.json"
   clean_dishes_llama: "data/processed/piatti_con_stime_allergeni.json"
+  clean_dishes_llama_no_bibite: "data/processed/piatti_con_stime_allergeni_no_bibite.json"
+  update_allergeni_dishes: "data/processed/piatti_con_allergeni_aggiornati.json"
