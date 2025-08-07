@@ -522,7 +522,7 @@ for i, r in enumerate(raw_data):
         logger.info(f"Processati {i + 1}/{len(raw_data)} ristoranti")
         
 
-# ===  RIMOZIONE DUPLICATI NEI PIATTI ===
+# Rimozione duplicati nei piatti
 logger.info("Inizio deduplicazione piatti")
 print("🧹 Rimozione duplicati piatti...")
 

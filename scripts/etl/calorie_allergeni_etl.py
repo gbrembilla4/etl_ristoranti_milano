@@ -33,7 +33,7 @@ try:
     input_file = os.path.join(os.path.dirname(__file__), "..", "..", CONFIG["file_paths"]["clean_dishes"])
     with open(input_file, "r", encoding="utf-8") as f:
         raw_data = json.load(f)
-    logger.info(f"Caricati {len(raw_data)} ristoranti dal file: {input_file}")
+    logger.info(f"Caricati {len(raw_data)} piatti dal file: {input_file}")
 except FileNotFoundError:
     logger.error(f"File '{input_file}' non trovato")
     exit(1)
