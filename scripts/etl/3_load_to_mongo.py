@@ -1,17 +1,15 @@
 import json
 from pymongo import MongoClient
-import os
 
 # === CONFIGURAZIONI ===
-MONGO_URI = "mongodb+srv://sampledb:NutriNow1@nutrinow.b870xoi.mongodb.net/ "
-DB_NAME = "glovo_db"
+MONGO_URI = "mongodb+srv://sampledb:NutriNow1@nutrinow.b870xoi.mongodb.net/"
+DB_NAME = "ristoranti_milano"
 COLLECTION_RESTAURANTS = "glovo_restaurants"
 COLLECTION_DISHES = "glovo_dishes"
 
 # === FILE PATHS ===
-DATA_DIR = os.path.join(os.path.dirname(__file__), '../../data/processed')
-RESTAURANTS_FILE = os.path.join(DATA_DIR, 'ristoranti_glovo_clean.json')
-DISHES_FILE = os.path.join(DATA_DIR, 'piatti_calorie_allergeni.json')
+RESTAURANTS_FILE = "/Users/gloria.brembilla/Documents/AIDA/Modulo1/02 - BI/etl_ristoranti_milano/data/exports/ristoranti_clean.json"
+DISHES_FILE = "/Users/gloria.brembilla/Documents/AIDA/Modulo1/02 - BI/etl_ristoranti_milano/data/exports/piatti_con_allergeni_aggiornati.json"
 
 # === FUNZIONE DI CARICAMENTO ===
 def load_json_to_mongo(file_path, db, collection_name):
@@ -19,19 +17,18 @@ def load_json_to_mongo(file_path, db, collection_name):
         data = json.load(f)
         
     if isinstance(data, list):
-        # Bulk insert
         if data:
-            db[collection_name].delete_many({})  # Optional: Pulisce la collection prima
+            db[collection_name].delete_many({})  # Pulisce la collection prima di inserire
             db[collection_name].insert_many(data)
-            print(f"Caricati {len(data)} documenti in '{collection_name}'")
+            print(f"✅ Caricati {len(data)} documenti in '{collection_name}'")
         else:
-            print(f"Nessun documento da caricare in '{collection_name}'")
+            print(f"⚠ Nessun documento da caricare in '{collection_name}'")
     elif isinstance(data, dict):
         db[collection_name].delete_many({})
         db[collection_name].insert_one(data)
-        print(f"Caricato 1 documento in '{collection_name}'")
+        print(f"✅ Caricato 1 documento in '{collection_name}'")
     else:
-        print(f"Formato JSON non riconosciuto per {file_path}")
+        print(f"❌ Formato JSON non riconosciuto per {file_path}")
 
 # === MAIN ===
 if __name__ == "__main__":
