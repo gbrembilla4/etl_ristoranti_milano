@@ -38,7 +38,7 @@ tutte_le_zone = [
 
 # ZONE PER QUESTA SESSIONE
 zones = [
-    "Quarto Oggiaro, Milano"
+    "Navigli, Milano"
 ]
 
 
@@ -381,7 +381,7 @@ async def salva_ristoranti(ristoranti, filename):
         json.dump(ristoranti, f, indent=2, ensure_ascii=False)
 
 async def estrai_ristoranti_da_zona(page, zona, ristoranti_esistenti):
-    print(f"\n➡️ Elaboro zona: {zona}")
+    print(f"\n Elaboro zona: {zona}")
 
     try:
         # Naviga alla pagina principale
@@ -399,16 +399,15 @@ async def estrai_ristoranti_da_zona(page, zona, ristoranti_esistenti):
         iframe = page.frame_locator("iframe.address-book-iframe")
         input_field = iframe.locator("input[placeholder*='Cerca'], input[aria-label='Cerca']")
         await input_field.wait_for(state="visible", timeout=10000)
-        print("✅ Iframe con input caricato.")
+        print("Iframe con input caricato.")
 
         # Scrivi la zona
         await input_field.click()
         await input_field.fill(zona)
-        print(f"⌨️ Scrivo: {zona}")
+        print(f"Scrivo: {zona}")
         await asyncio.sleep(2)
 
         # Clicca il primo suggerimento disponibile
-        #first_suggestion = iframe.locator("div.ListItem_pintxo-list-item__wg8wT[data-actionable='true']").first
         first_suggestion = iframe.locator("div[data-actionable='true']").first
         await first_suggestion.wait_for(state="visible", timeout=8000)
         await first_suggestion.click()

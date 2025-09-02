@@ -1,0 +1,21 @@
+2025-09-02 11:19:24,577 - INFO - === INIZIO 1_transforming (allergeni) ===
+2025-09-02 11:25:19,102 - INFO - === INIZIO 1_transforming (allergeni) ===
+2025-09-02 11:25:32,396 - INFO - === INIZIO 1_transforming (allergeni) ===
+2025-09-02 11:25:32,453 - INFO - Caricati 1132 piatti da /Users/gloria.brembilla/Documents/Master_AIDA/Modulo1/02 - BI/etl_ristoranti_milano/scripts/etl/../../data/raw/ristoranti_glovo_milano.json
+2025-09-02 11:25:32,571 - INFO - Piatti tenuti: 1127 | Scartati (bibite/altro/menu/box): 5
+2025-09-02 11:25:32,791 - INFO - Salvati 1127 piatti con allergeni in /Users/gloria.brembilla/Documents/Master_AIDA/Modulo1/02 - BI/etl_ristoranti_milano/scripts/etl/../../data/processed/piatti_enriched_allergens.json
+2025-09-02 11:25:32,791 - INFO - === FINE 1_transforming ===
+2025-09-02 11:31:47,497 - INFO - === INIZIO 1_transforming (allergeni) ===
+2025-09-02 11:31:47,583 - INFO - Caricati 40661 piatti da /Users/gloria.brembilla/Documents/Master_AIDA/Modulo1/02 - BI/etl_ristoranti_milano/scripts/etl/../../data/processed/piatti_clean.json
+2025-09-02 11:34:10,712 - INFO - === INIZIO 1_transforming (allergeni) ===
+2025-09-02 11:34:10,804 - INFO - Caricati 40661 piatti da /Users/gloria.brembilla/Documents/Master_AIDA/Modulo1/02 - BI/etl_ristoranti_milano/scripts/etl/../../data/processed/piatti_clean.json
+2025-09-02 11:34:39,973 - INFO - === INIZIO 1_transforming (allergeni) ===
+2025-09-02 11:34:40,076 - INFO - Caricati 40661 piatti da /Users/gloria.brembilla/Documents/Master_AIDA/Modulo1/02 - BI/etl_ristoranti_milano/scripts/etl/../../data/processed/piatti_clean.json
+2025-09-02 11:35:02,748 - INFO - Piatti tenuti: 32296 | Scartati (bibite/altro/menu/box): 8365
+2025-09-02 11:35:03,017 - INFO - Salvati 32296 piatti con allergeni in /Users/gloria.brembilla/Documents/Master_AIDA/Modulo1/02 - BI/etl_ristoranti_milano/scripts/etl/../../data/processed/piatti_enriched_allergens.json
+2025-09-02 11:35:03,017 - INFO - === FINE 1_transforming ===
+2025-09-02 12:43:53,587 - INFO - === INIZIO 1_transforming (allergeni) ===
+2025-09-02 12:43:53,670 - INFO - Caricati 40661 piatti da /Users/gloria.brembilla/Documents/Master_AIDA/Modulo1/02 - BI/etl_ristoranti_milano/scripts/etl/../../data/processed/piatti_clean.json
+2025-09-02 12:44:16,158 - INFO - Piatti tenuti: 32296 | Scartati (bibite/altro/menu/box): 8365
+2025-09-02 12:44:16,435 - INFO - Salvati 32296 piatti con allergeni in /Users/gloria.brembilla/Documents/Master_AIDA/Modulo1/02 - BI/etl_ristoranti_milano/scripts/etl/../../data/processed/piatti_enriched_allergens.json
+2025-09-02 12:44:16,435 - INFO - === FINE 1_transforming ===

@@ -1,0 +1,7 @@
+2025-09-02 11:36:25,762 - INFO - === INIZIO 2_preparing_for_llama ===
+2025-09-02 11:36:25,839 - INFO - Caricati 32296 piatti (già arricchiti con allergeni) da /Users/gloria.brembilla/Documents/Master_AIDA/Modulo1/02 - BI/etl_ristoranti_milano/scripts/etl/../../data/processed/piatti_enriched_allergens.json
+2025-09-02 12:36:38,593 - INFO - Unificati 32296 -> 19026 piatti
+2025-09-02 12:36:38,717 - INFO - Salvati 19026 piatti unici per LLaMA in /Users/gloria.brembilla/Documents/Master_AIDA/Modulo1/02 - BI/etl_ristoranti_milano/scripts/etl/../../data/processed/piatti_unique_for_llama.json
+2025-09-02 12:36:38,717 - INFO - === FINE 2_preparing_for_llama ===
+2025-09-02 13:05:20,406 - INFO - === INIZIO 2_preparing_for_llama ===
+2025-09-02 13:05:20,490 - INFO - Caricati 32296 piatti (già arricchiti con allergeni) da /Users/gloria.brembilla/Documents/Master_AIDA/Modulo1/02 - BI/etl_ristoranti_milano/scripts/etl/../../data/processed/piatti_enriched_allergens.json

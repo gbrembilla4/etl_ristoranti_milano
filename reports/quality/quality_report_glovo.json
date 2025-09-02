@@ -1,51 +1,570 @@
 {
-  "timestamp": "2025-08-05T16:09:56.489714",
+  "timestamp": "2025-09-02T11:27:21.082080",
   "versione_etl": "2.0",
   "configurazione": {
-    "prezzo_min": 0.5,
-    "prezzo_max": 150.0,
-    "min_piatti_ristorante": 2,
-    "min_lunghezza_nome_piatto": 3,
-    "max_lunghezza_nome_piatto": 100,
-    "versione_etl": "2.0"
+    "file_paths": {
+      "raw_data": "data/raw/ristoranti_glovo_milano.json",
+      "clean_restaurants": "data/processed/ristoranti_clean.json",
+      "clean_dishes": "data/processed/piatti_clean.json",
+      "dishes_with_allergens": "data/processed/piatti_enriched_allergens.json",
+      "unique_dishes_for_llama": "data/processed/piatti_unique_for_llama.json",
+      "unique_dishes_estimations": "data/processed/piatti_unique_estimations.json",
+      "final_dishes_with_estimations": "data/processed/piatti_final_estimations.json"
+    },
+    "data_quality": {
+      "min_price": 0.5,
+      "max_price": 150.0,
+      "min_dishes_per_restaurant": 2,
+      "min_dish_name_length": 3,
+      "max_dish_name_length": 200
+    },
+    "etl": {
+      "versione": "2.0"
+    },
+    "milan": {
+      "keywords": [
+        "milano",
+        "milan",
+        "mi"
+      ],
+      "caps": [
+        "20100",
+        "20121",
+        "20122",
+        "20123",
+        "20124",
+        "20125",
+        "20126",
+        "20127",
+        "20128",
+        "20129",
+        "20131",
+        "20132",
+        "20133",
+        "20134",
+        "20135",
+        "20136",
+        "20137",
+        "20138",
+        "20139",
+        "20141",
+        "20142",
+        "20143",
+        "20144",
+        "20145",
+        "20146",
+        "20147",
+        "20148",
+        "20149",
+        "20151",
+        "20152",
+        "20153",
+        "20154",
+        "20155",
+        "20156",
+        "20157",
+        "20158",
+        "20159",
+        "20161",
+        "20162"
+      ],
+      "zones": [
+        "brera",
+        "navigli",
+        "porta garibaldi",
+        "corso buenos aires",
+        "duomo",
+        "castello",
+        "porta romana",
+        "isola"
+      ]
+    },
+    "classifications": {
+      "pizza": {
+        "restaurant_keywords": [
+          "pizzeria",
+          "pizza",
+          "napoletana",
+          "romana",
+          "pizzium"
+        ],
+        "dish_keywords": [
+          "pizza",
+          "margherita",
+          "marinara",
+          "capricciosa",
+          "quattro stagioni",
+          "diavola",
+          "quattro formaggi",
+          "prosciutto",
+          "funghi",
+          "calzone",
+          "bufala"
+        ],
+        "ingredient_keywords": [
+          "mozzarella",
+          "pomodoro",
+          "basilico",
+          "impasto",
+          "origano",
+          "olio"
+        ]
+      },
+      "piadina": {
+        "restaurant_keywords": [
+          "piadina",
+          "piadineria",
+          "piadinerie",
+          "piadina romagnola"
+        ],
+        "dish_keywords": [
+          "piadina",
+          "rotolo",
+          "piada",
+          "piada romagnola",
+          "piadina farcita",
+          "piadina calda"
+        ],
+        "ingredient_keywords": [
+          "impasto",
+          "crudo",
+          "prosciutto",
+          "prosciutto cotto",
+          "speck",
+          "salame",
+          "pollo",
+          "mozzarella",
+          "stracchino",
+          "squacquerone",
+          "formaggio",
+          "rucola",
+          "pomodoro",
+          "zucchine",
+          "melanzane",
+          "lattuga",
+          "maionese"
+        ]
+      },
+      "pasta": {
+        "restaurant_keywords": [
+          "trattoria",
+          "osteria",
+          "italiana",
+          "pastificio"
+        ],
+        "dish_keywords": [
+          "spaghetti",
+          "penne",
+          "rigatoni",
+          "fusilli",
+          "tagliatelle",
+          "fettuccine",
+          "linguine",
+          "orecchiette",
+          "pasta",
+          "carbonara",
+          "amatriciana",
+          "arrabbiata",
+          "cacio e pepe",
+          "pesto",
+          "bolognese",
+          "lasagne",
+          "ravioli",
+          "tortellini",
+          "gnocchi",
+          "bucatini",
+          "paccheri"
+        ],
+        "ingredient_keywords": [
+          "pasta",
+          "parmigiano",
+          "pecorino",
+          "guanciale",
+          "pancetta",
+          "sugo"
+        ]
+      },
+      "sushi": {
+        "restaurant_keywords": [
+          "sushi",
+          "giapponese",
+          "japanese",
+          "asian",
+          "sakura",
+          "tokyo"
+        ],
+        "dish_keywords": [
+          "sushi",
+          "sashimi",
+          "maki",
+          "nigiri",
+          "uramaki",
+          "temaki",
+          "chirashi",
+          "ramen",
+          "yakitori",
+          "tempura",
+          "gyoza",
+          "edamame",
+          "miso"
+        ],
+        "ingredient_keywords": [
+          "salmone",
+          "tonno",
+          "avocado",
+          "cetriolo",
+          "philadelphia",
+          "wasabi",
+          "zenzero",
+          "riso"
+        ]
+      },
+      "hamburger": {
+        "restaurant_keywords": [
+          "hamburger",
+          "burger",
+          "mcdonalds",
+          "burger king",
+          "old wild west"
+        ],
+        "dish_keywords": [
+          "hamburger",
+          "burger",
+          "cheeseburger",
+          "big mac",
+          "whopper",
+          "chicken burger"
+        ],
+        "ingredient_keywords": [
+          "carne",
+          "formaggio",
+          "lattuga",
+          "pomodoro",
+          "cipolla",
+          "pane",
+          "bacon",
+          "salsa"
+        ]
+      },
+      "poke": {
+        "restaurant_keywords": [
+          "poke",
+          "poké",
+          "pokè",
+          "hawaiian",
+          "healthy bowl"
+        ],
+        "dish_keywords": [
+          "poke",
+          "poké",
+          "pokè",
+          "bowl",
+          "poke bowl",
+          "hawaiian bowl",
+          "salmon poke",
+          "chicken poke",
+          "vegan poke"
+        ],
+        "ingredient_keywords": [
+          "riso",
+          "salmone",
+          "tonno",
+          "pollo",
+          "tofu",
+          "edamame",
+          "avocado",
+          "alga",
+          "cetriolo",
+          "carote",
+          "mango",
+          "maionese",
+          "sesamo",
+          "soia",
+          "salsa teriyaki"
+        ]
+      },
+      "carne": {
+        "restaurant_keywords": [
+          "steakhouse",
+          "grill",
+          "braceria",
+          "carne"
+        ],
+        "dish_keywords": [
+          "bistecca",
+          "tagliata",
+          "brasato",
+          "ossobuco",
+          "scaloppine",
+          "cotoletta",
+          "pollo",
+          "vitello",
+          "manzo",
+          "maiale",
+          "agnello",
+          "salsiccia",
+          "spiedini",
+          "arrosto",
+          "fiorentina",
+          "prosciutto"
+        ],
+        "ingredient_keywords": [
+          "carne",
+          "manzo",
+          "vitello",
+          "pollo",
+          "maiale",
+          "agnello"
+        ]
+      },
+      "pesce": {
+        "restaurant_keywords": [
+          "pescheria",
+          "mare",
+          "marinaro",
+          "ittico"
+        ],
+        "dish_keywords": [
+          "branzino",
+          "orata",
+          "salmone",
+          "tonno",
+          "baccalà",
+          "merluzzo",
+          "pesce",
+          "crudo",
+          "tartare",
+          "frutti di mare",
+          "scampi",
+          "gamberi",
+          "vongole",
+          "calamari",
+          "polpo",
+          "sogliola",
+          "cozze",
+          "seppie"
+        ],
+        "ingredient_keywords": [
+          "pesce",
+          "mare",
+          "gamberi",
+          "vongole",
+          "cozze",
+          "calamari",
+          "molluschi"
+        ]
+      },
+      "gelato": {
+        "restaurant_keywords": [
+          "gelateria",
+          "gelato",
+          "cremeria"
+        ],
+        "dish_keywords": [
+          "gelato",
+          "sorbetto",
+          "granita",
+          "frappè",
+          "milkshake",
+          "coppa",
+          "cono"
+        ],
+        "ingredient_keywords": [
+          "latte",
+          "panna",
+          "zucchero",
+          "frutta",
+          "cioccolato",
+          "vaniglia"
+        ]
+      },
+      "kebab": {
+        "restaurant_keywords": [
+          "kebab",
+          "kebap",
+          "doner",
+          "turco",
+          "mediorientale"
+        ],
+        "dish_keywords": [
+          "kebab",
+          "doner",
+          "falafel",
+          "shawarma",
+          "pita",
+          "hummus"
+        ],
+        "ingredient_keywords": [
+          "carne",
+          "pollo",
+          "verdure",
+          "salse",
+          "pita",
+          "yogurt",
+          "tabbouleh"
+        ]
+      },
+      "insalata": {
+        "restaurant_keywords": [
+          "green",
+          "salad",
+          "bio",
+          "healthy"
+        ],
+        "dish_keywords": [
+          "insalata",
+          "caesar",
+          "caprese",
+          "rucola",
+          "lattuga",
+          "mista",
+          "greca"
+        ],
+        "ingredient_keywords": [
+          "lattuga",
+          "rucola",
+          "pomodori",
+          "mozzarella",
+          "olive",
+          "mais",
+          "tonno",
+          "uovo",
+          "cetriolo"
+        ]
+      },
+      "dolce": {
+        "restaurant_keywords": [
+          "pasticceria",
+          "dolceria",
+          "dessert"
+        ],
+        "dish_keywords": [
+          "tiramisu",
+          "panna cotta",
+          "cannoli",
+          "cassata",
+          "cheesecake",
+          "torta",
+          "mascarpone",
+          "crostata",
+          "mousse",
+          "semifreddo",
+          "profiterole",
+          "millefoglie",
+          "brownie",
+          "babà"
+        ],
+        "ingredient_keywords": [
+          "mascarpone",
+          "panna",
+          "cioccolato",
+          "caffè",
+          "biscotti",
+          "frutta",
+          "zucchero",
+          "crema"
+        ]
+      },
+      "bibite": {
+        "restaurant_keywords": [
+          "bar",
+          "drink",
+          "bevande",
+          "bibite"
+        ],
+        "dish_keywords": [
+          "coca cola",
+          "fanta",
+          "sprite",
+          "aranciata",
+          "chinotto",
+          "the",
+          "tè",
+          "estathe",
+          "caffè",
+          "cappuccino",
+          "frappuccino",
+          "acqua",
+          "birra",
+          "vino",
+          "succhi",
+          "spremuta",
+          "aperitivo",
+          "spritz",
+          "bottiglia",
+          "cl",
+          "estathè"
+        ],
+        "ingredient_keywords": [
+          "caffeina",
+          "caffe",
+          "zucchero",
+          "the",
+          "acqua",
+          "anidride carbonica",
+          "bottiglia",
+          "limone",
+          "malto",
+          "uva",
+          "arancia",
+          "cl"
+        ]
+      },
+      "menu": {
+        "restaurant_keywords": [],
+        "dish_keywords": [
+          "menu",
+          "menù",
+          "comprende",
+          "box"
+        ],
+        "ingredient_keywords": [
+          "menu",
+          "menù",
+          "comprende",
+          "box"
+        ]
+      }
+    }
   },
   "statistiche": {
-    "ristoranti_processati": 1131,
-    "ristoranti_scartati": 122,
+    "ristoranti_processati": 1132,
+    "ristoranti_scartati": 123,
     "ristoranti_duplicati": 0,
     "piatti_processati": 71461,
     "piatti_scartati": 21698,
     "piatti_prezzo_anomalo": 308,
-    "indirizzi_non_milano": 4,
+    "indirizzi_non_milano": 5,
     "motivi_scarto": {
       "ingredienti_non_validi": 21598,
       "troppi_pochi_piatti": 118,
-      "indirizzo_non_milano": 4,
+      "indirizzo_non_milano": 5,
       "piatto_nome_troppo_corto": 46,
       "piatto_nome_non_valido_(solo_numeri/simboli)": 54
     },
     "piatti_duplicati_rimossi": 9082
   },
   "distribuzione_tipi_piatto": {
-    "pizza": 9847,
-    "piadina": 4279,
-    "hamburger": 4150,
-    "kebab": 1337,
-    "carne": 2545,
-    "bibite": 2072,
-    "altro": 5520,
-    "insalata": 1269,
-    "pesce": 1799,
-    "pasta": 1615,
-    "sushi": 9207,
-    "gelato": 2182,
-    "dolce": 963,
-    "poke": 2978
+    "pizza": 9643,
+    "bibite": 4668,
+    "piadina": 4074,
+    "menu": 741,
+    "hamburger": 3845,
+    "kebab": 1371,
+    "carne": 2522,
+    "altro": 3629,
+    "insalata": 1237,
+    "pesce": 1787,
+    "pasta": 1578,
+    "sushi": 8925,
+    "dolce": 945,
+    "gelato": 1945,
+    "poke": 2853
   },
   "riepilogo": {
     "ristoranti_validi": 1009,
     "piatti_validi": 40661,
-    "tasso_successo_ristoranti": 89.2130857648099,
+    "tasso_successo_ristoranti": 89.13427561837456,
     "tasso_successo_piatti": 56.89956759631127
   }
 }

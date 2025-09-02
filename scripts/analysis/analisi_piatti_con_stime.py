@@ -1,5 +1,5 @@
 """
-Script di pulizia semplificato per file JSON di piatti_con_allergeni_aggiornati.json
+Script di pulizia per file JSON di piatti_con_allergeni_aggiornati.json
 Analizza valori null e piatti senza allergeni, rimuove piatti 'bibite' anche in base agli ingredienti
 """
 
@@ -123,7 +123,7 @@ def remove_bibite(data, soglia_fuzzy=85):
     keywords = [
         'cl', 'ml', 'coca', 'cola', 'bibita', 'acqua', 'succo', 'cocktail', 'soda',
         'gassata', 'drink', 'bevanda', '%', 'birra', 'vino', 'liquore', 'alcol',
-        'spumante', 'amaro', 'digestivo', 'aperitivo', 'spritz', 'mojito'
+        'spumante', 'amaro', 'digestivo', 'aperitivo', 'spritz', 'mojito', 'bottiglia'
     ]
 
     def is_probable_bibita(p):
@@ -150,7 +150,6 @@ def remove_bibite(data, soglia_fuzzy=85):
 
 
 def main():
-    """Funzione principale"""
     logger.info("=== INIZIO SCRIPT PULIZIA PIATTI ===")
     
     # === Carica JSON ===

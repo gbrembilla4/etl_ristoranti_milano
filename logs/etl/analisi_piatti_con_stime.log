@@ -196,3 +196,102 @@ Esempi piatti con healthy null:
 2025-08-07 17:55:29,781 - INFO - Piatti con healthy null: 1224 (4.9%)
 2025-08-07 17:55:29,781 - INFO - Piatti senza allergeni: 1630 (6.5%)
 2025-08-07 17:55:29,781 - INFO - === FINE SCRIPT PULIZIA PIATTI ===
+2025-08-25 14:50:08,905 - INFO - === INIZIO SCRIPT PULIZIA PIATTI ===
+2025-08-25 14:50:08,981 - INFO - Caricati 25117 piatti dal file: /Users/gloria.brembilla/Documents/Master_AIDA/Modulo1/02 - BI/etl_ristoranti_milano/scripts/analysis/../../data/processed/piatti_con_allergeni_aggiornati.json
+2025-08-25 14:50:08,983 - INFO - Piatti dopo filtro 'bibite': 25117 (rimossi 0)
+2025-08-25 14:50:11,540 - INFO - Piatti rimossi per nome o ingredienti sospetti di bibite (fuzzy): 20
+2025-08-25 14:50:11,541 - INFO - === ANALISI VALORI NULL ===
+2025-08-25 14:50:11,542 - INFO - Piatti con calorie null: 1438
+2025-08-25 14:50:11,543 - INFO - Distribuzione per tipo piatto (calorie null):
+2025-08-25 14:50:11,543 - INFO -   - pizza: 634
+2025-08-25 14:50:11,543 - INFO -   - sushi: 248
+2025-08-25 14:50:11,543 - INFO -   - piadina: 125
+2025-08-25 14:50:11,543 - INFO -   - gelato: 96
+2025-08-25 14:50:11,543 - INFO -   - kebab: 86
+2025-08-25 14:50:11,543 - INFO -   - carne: 79
+2025-08-25 14:50:11,543 - INFO -   - pasta: 38
+2025-08-25 14:50:11,543 - INFO -   - pesce: 36
+2025-08-25 14:50:11,543 - INFO -   - hamburger: 35
+2025-08-25 14:50:11,543 - INFO -   - dolce: 28
+2025-08-25 14:50:11,543 - INFO -   - poke: 21
+2025-08-25 14:50:11,543 - INFO -   - insalata: 12
+2025-08-25 14:50:11,543 - INFO - 
+Esempi piatti con calorie null:
+2025-08-25 14:50:11,543 - INFO -   - NAPOLI (gelato) - Pizzium
+2025-08-25 14:50:11,543 - INFO -   - Tender - 10 Pezzi (piadina) - Popeyes
+2025-08-25 14:50:11,543 - INFO -   - Scaloppa di pollo (carne) - Fratelli La Bufala
+2025-08-25 14:50:11,543 - INFO -   - Pesto di Basilico "Roberto Panizza" (pasta) - Gino Sorbillo Gourmand
+2025-08-25 14:50:11,543 - INFO -   - Piadatina (piadina) - Starbucks®
+2025-08-25 14:50:11,545 - INFO - 
+Piatti con healthy null: 1224
+2025-08-25 14:50:11,545 - INFO - Distribuzione per tipo piatto (healthy null):
+2025-08-25 14:50:11,545 - INFO -   - pizza: 626
+2025-08-25 14:50:11,545 - INFO -   - sushi: 246
+2025-08-25 14:50:11,545 - INFO -   - piadina: 111
+2025-08-25 14:50:11,545 - INFO -   - kebab: 59
+2025-08-25 14:50:11,545 - INFO -   - gelato: 37
+2025-08-25 14:50:11,545 - INFO -   - carne: 33
+2025-08-25 14:50:11,545 - INFO -   - pesce: 32
+2025-08-25 14:50:11,545 - INFO -   - hamburger: 30
+2025-08-25 14:50:11,545 - INFO -   - pasta: 20
+2025-08-25 14:50:11,545 - INFO -   - poke: 15
+2025-08-25 14:50:11,545 - INFO -   - insalata: 11
+2025-08-25 14:50:11,545 - INFO -   - dolce: 4
+2025-08-25 14:50:11,545 - INFO - 
+Esempi piatti con healthy null:
+2025-08-25 14:50:11,545 - INFO -   - 4 stagioni (piadina) - Il Profumo della Pizza
+2025-08-25 14:50:11,545 - INFO -   - Romana (pizza) - Il Profumo della Pizza
+2025-08-25 14:50:11,545 - INFO -   - Pizza wurstel (pizza) - Tourlé La Pizzeria e il Grill Baranzate
+2025-08-25 14:50:11,545 - INFO -   - Pizza Margherita (pizza) - Tourlé La Pizzeria e il Grill Baranzate
+2025-08-25 14:50:11,545 - INFO -   - Pizza Margherita baby (pizza) - Pizzeria Il Grano D'Oro
+2025-08-25 14:50:11,545 - INFO - 
+=== ANALISI PIATTI SENZA ALLERGENI ===
+2025-08-25 14:50:11,547 - INFO - Piatti senza allergeni dichiarati: 1630
+2025-08-25 14:50:11,548 - INFO - Distribuzione per tipo piatto (senza allergeni):
+2025-08-25 14:50:11,548 - INFO -   - carne: 939
+2025-08-25 14:50:11,548 - INFO -   - poke: 264
+2025-08-25 14:50:11,548 - INFO -   - gelato: 222
+2025-08-25 14:50:11,548 - INFO -   - insalata: 125
+2025-08-25 14:50:11,548 - INFO -   - dolce: 80
+2025-08-25 14:50:11,548 - INFO - 
+=== INGREDIENTI PIÙ COMUNI (piatti senza allergeni) ===
+2025-08-25 14:50:11,549 - INFO - Top 10 ingredienti più comuni:
+2025-08-25 14:50:11,549 - INFO -   - 'pollo': 53 volte
+2025-08-25 14:50:11,549 - INFO -   - 'cipolla': 34 volte
+2025-08-25 14:50:11,549 - INFO -   - 'carote': 33 volte
+2025-08-25 14:50:11,549 - INFO -   - 'manzo': 23 volte
+2025-08-25 14:50:11,549 - INFO -   - 'peperoni': 23 volte
+2025-08-25 14:50:11,549 - INFO -   - 'insalata': 21 volte
+2025-08-25 14:50:11,549 - INFO -   - 'salsa tzatziki': 20 volte
+2025-08-25 14:50:11,549 - INFO -   - 'piccante': 18 volte
+2025-08-25 14:50:11,549 - INFO -   - 'vitello': 17 volte
+2025-08-25 14:50:11,549 - INFO -   - 'mais': 15 volte
+2025-08-25 14:50:11,549 - INFO - 
+=== ESEMPI PIATTI SENZA ALLERGENI ===
+2025-08-25 14:50:11,549 - INFO - - Insalata con carciofi (insalata)
+2025-08-25 14:50:11,549 - INFO -   Ristorante: Uylas Kebab Center
+2025-08-25 14:50:11,549 - INFO -   Ingredienti: Insalata verde, carciofi, aceto, basilico, cipolla
+2025-08-25 14:50:11,549 - INFO - 
+2025-08-25 14:50:11,549 - INFO - - POLPETTE DI POLLO AL SUGO (carne)
+2025-08-25 14:50:11,549 - INFO -   Ristorante: Giannasi - Il Re del Pollo
+2025-08-25 14:50:11,549 - INFO -   Ingredienti: MORBIDE POLPETTE DI POLLO AFFOGATE NELLA NOSTRA RICCA SALSA DI POMODORO
+2025-08-25 14:50:11,550 - INFO - 
+2025-08-25 14:50:11,550 - INFO - - MEZZO POLLO ALLO SPIEDO (carne)
+2025-08-25 14:50:11,550 - INFO -   Ristorante: Giannasi - Il Re del Pollo
+2025-08-25 14:50:11,550 - INFO -   Ingredienti: IL BESTSELLER DI GIANNASI
+2025-08-25 14:50:11,550 - INFO - 
+2025-08-25 14:50:11,550 - INFO - - POMODORI PELATI LA CARMELA (insalata)
+2025-08-25 14:50:11,550 - INFO -   Ristorante: Pizzium
+2025-08-25 14:50:11,550 - INFO -   Ingredienti: Pomodori pelati La Carmela - latta 400 gr
+2025-08-25 14:50:11,550 - INFO - 
+2025-08-25 14:50:11,550 - INFO - - Vaschetta 500gr (gelato)
+2025-08-25 14:50:11,550 - INFO -   Ristorante: Terra gelato
+2025-08-25 14:50:11,550 - INFO -   Ingredienti: 3 gusti
+2025-08-25 14:50:11,550 - INFO - 
+2025-08-25 14:50:11,550 - INFO - 
+=== REPORT RIASSUNTIVO ===
+2025-08-25 14:50:11,555 - INFO - Totale piatti: 25097
+2025-08-25 14:50:11,555 - INFO - Piatti con calorie null: 1438 (5.7%)
+2025-08-25 14:50:11,555 - INFO - Piatti con healthy null: 1224 (4.9%)
+2025-08-25 14:50:11,555 - INFO - Piatti senza allergeni: 1630 (6.5%)
+2025-08-25 14:50:11,555 - INFO - === FINE SCRIPT PULIZIA PIATTI ===
